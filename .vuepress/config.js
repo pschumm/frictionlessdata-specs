@@ -18,7 +18,6 @@ module.exports = {
     editLinks: true,
     sidebar: 'auto',
     nav: [
-      { text: 'Home', link: '/' },
       {
         text: "Specifications",
         items: [
@@ -37,7 +36,6 @@ module.exports = {
           { text: "Views", link: "/views/" },
         ]
       },
-      { text: 'Changelog', link: '/changelog/' },
       { text: 'Patterns', link: '/patterns/' },
       { text: 'Implementation', link: '/implementation/' }
     ]
