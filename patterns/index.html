@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Patterns | Frictionless Data Specs</title>
+    <meta name="description" content="">
+    <meta name="generator" content="VuePress 1.3.0">
+    
+    
+    <link rel="preload" href="/assets/css/0.styles.c6f44f18.css" as="style"><link rel="preload" href="/assets/js/app.0a3985f5.js" as="script"><link rel="preload" href="/assets/js/3.f7dbc0b9.js" as="script"><link rel="preload" href="/assets/js/1.024d35fb.js" as="script"><link rel="preload" href="/assets/js/19.5ae6a7ce.js" as="script"><link rel="prefetch" href="/assets/js/10.b8abbbc5.js"><link rel="prefetch" href="/assets/js/11.96eaaa0c.js"><link rel="prefetch" href="/assets/js/12.87689947.js"><link rel="prefetch" href="/assets/js/13.b5b5a67a.js"><link rel="prefetch" href="/assets/js/14.1b0e4f2f.js"><link rel="prefetch" href="/assets/js/15.f6a57e6c.js"><link rel="prefetch" href="/assets/js/16.89e0d525.js"><link rel="prefetch" href="/assets/js/17.e6a1331a.js"><link rel="prefetch" href="/assets/js/18.6f755841.js"><link rel="prefetch" href="/assets/js/20.503f1688.js"><link rel="prefetch" href="/assets/js/21.743fdbf7.js"><link rel="prefetch" href="/assets/js/22.e9f01260.js"><link rel="prefetch" href="/assets/js/23.eb4f680e.js"><link rel="prefetch" href="/assets/js/24.890aa077.js"><link rel="prefetch" href="/assets/js/25.b5a746ae.js"><link rel="prefetch" href="/assets/js/26.ec3a904c.js"><link rel="prefetch" href="/assets/js/27.6f5b39e6.js"><link rel="prefetch" href="/assets/js/4.c6f950b7.js"><link rel="prefetch" href="/assets/js/5.28eebc52.js"><link rel="prefetch" href="/assets/js/6.f1e99938.js"><link rel="prefetch" href="/assets/js/7.cb6bba19.js"><link rel="prefetch" href="/assets/js/8.98578714.js"><link rel="prefetch" href="/assets/js/9.72ba6340.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.c6f44f18.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><img src="/logo-dot.svg" alt="Frictionless Data Specs" class="logo"> <span class="site-name can-hide">Frictionless Data Specs</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/" class="nav-link">
+  Home
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Specifications" class="dropdown-title"><span class="title">Specifications</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/csv-dialect/" class="nav-link">
+  CSV Dialect
+</a></li><li class="dropdown-item"><!----> <a href="/data-package/" class="nav-link">
+  Data Package
+</a></li><li class="dropdown-item"><!----> <a href="/data-package-identifier/" class="nav-link">
+  Data Package Identifier
+</a></li><li class="dropdown-item"><!----> <a href="/data-resource/" class="nav-link">
+  Data Resource
+</a></li><li class="dropdown-item"><!----> <a href="/fiscal-data-package/" class="nav-link">
+  Fiscal Data Package
+</a></li><li class="dropdown-item"><!----> <a href="/fiscal-data-package--budgets/" class="nav-link">
+  Fiscal Data Package - Budgets
+</a></li><li class="dropdown-item"><!----> <a href="/fiscal-data-package--spending/" class="nav-link">
+  Fiscal Data Package - Spending
+</a></li><li class="dropdown-item"><!----> <a href="/profiles/" class="nav-link">
+  Profiles
+</a></li><li class="dropdown-item"><!----> <a href="/security/" class="nav-link">
+  Security
+</a></li><li class="dropdown-item"><!----> <a href="/table-schema/" class="nav-link">
+  Table Schema
+</a></li><li class="dropdown-item"><!----> <a href="/tabular-data-package/" class="nav-link">
+  Tabular Data Package
+</a></li><li class="dropdown-item"><!----> <a href="/tabular-data-resource/" class="nav-link">
+  Tabular Data Resource
+</a></li><li class="dropdown-item"><!----> <a href="/views/" class="nav-link">
+  Views
+</a></li></ul></div></div><div class="nav-item"><a href="/changelog/" class="nav-link">
+  Changelog
+</a></div><div class="nav-item"><a href="/patterns/" class="nav-link router-link-exact-active router-link-active">
+  Patterns
+</a></div><div class="nav-item"><a href="/implementation/" class="nav-link">
+  Implementation
+</a></div> <a href="https://github.com/frictionlessdata/specs" target="_blank" rel="noopener noreferrer" class="repo-link">
+    GitHub
+    <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/" class="nav-link">
+  Home
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Specifications" class="dropdown-title"><span class="title">Specifications</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/csv-dialect/" class="nav-link">
+  CSV Dialect
+</a></li><li class="dropdown-item"><!----> <a href="/data-package/" class="nav-link">
+  Data Package
+</a></li><li class="dropdown-item"><!----> <a href="/data-package-identifier/" class="nav-link">
+  Data Package Identifier
+</a></li><li class="dropdown-item"><!----> <a href="/data-resource/" class="nav-link">
+  Data Resource
+</a></li><li class="dropdown-item"><!----> <a href="/fiscal-data-package/" class="nav-link">
+  Fiscal Data Package
+</a></li><li class="dropdown-item"><!----> <a href="/fiscal-data-package--budgets/" class="nav-link">
+  Fiscal Data Package - Budgets
+</a></li><li class="dropdown-item"><!----> <a href="/fiscal-data-package--spending/" class="nav-link">
+  Fiscal Data Package - Spending
+</a></li><li class="dropdown-item"><!----> <a href="/profiles/" class="nav-link">
+  Profiles
+</a></li><li class="dropdown-item"><!----> <a href="/security/" class="nav-link">
+  Security
+</a></li><li class="dropdown-item"><!----> <a href="/table-schema/" class="nav-link">
+  Table Schema
+</a></li><li class="dropdown-item"><!----> <a href="/tabular-data-package/" class="nav-link">
+  Tabular Data Package
+</a></li><li class="dropdown-item"><!----> <a href="/tabular-data-resource/" class="nav-link">
+  Tabular Data Resource
+</a></li><li class="dropdown-item"><!----> <a href="/views/" class="nav-link">
+  Views
+</a></li></ul></div></div><div class="nav-item"><a href="/changelog/" class="nav-link">
+  Changelog
+</a></div><div class="nav-item"><a href="/patterns/" class="nav-link router-link-exact-active router-link-active">
+  Patterns
+</a></div><div class="nav-item"><a href="/implementation/" class="nav-link">
+  Implementation
+</a></div> <a href="https://github.com/frictionlessdata/specs" target="_blank" rel="noopener noreferrer" class="repo-link">
+    GitHub
+    <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></nav>  <ul class="sidebar-links"><li><section class="sidebar-group depth-0"><p class="sidebar-heading open"><span>Patterns</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/patterns/#meta" class="sidebar-link">Meta</a><ul class="sidebar-sub-headers"></ul></li><li><a href="/patterns/#private-properties" class="sidebar-link">Private properties</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/patterns/#overview" class="sidebar-link">Overview</a></li><li class="sidebar-sub-header"><a href="/patterns/#implementations" class="sidebar-link">Implementations</a></li><li class="sidebar-sub-header"><a href="/patterns/#specification" class="sidebar-link">Specification</a></li></ul></li><li><a href="/patterns/#caching-of-resources" class="sidebar-link">Caching of resources</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/patterns/#overview-2" class="sidebar-link">Overview</a></li><li class="sidebar-sub-header"><a href="/patterns/#implementations-2" class="sidebar-link">Implementations</a></li><li class="sidebar-sub-header"><a href="/patterns/#specification-2" class="sidebar-link">Specification</a></li></ul></li><li><a href="/patterns/#compression-of-resources" class="sidebar-link">Compression of resources</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/patterns/#overview-3" class="sidebar-link">Overview</a></li><li class="sidebar-sub-header"><a href="/patterns/#implementations-3" class="sidebar-link">Implementations</a></li><li class="sidebar-sub-header"><a href="/patterns/#specification-3" class="sidebar-link">Specification</a></li></ul></li><li><a href="/patterns/#language-support" class="sidebar-link">Language support</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/patterns/#overview-4" class="sidebar-link">Overview</a></li><li class="sidebar-sub-header"><a href="/patterns/#implementations-4" class="sidebar-link">Implementations</a></li><li class="sidebar-sub-header"><a href="/patterns/#specification-4" class="sidebar-link">Specification</a></li></ul></li><li><a href="/patterns/#translation-support" class="sidebar-link">Translation support</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/patterns/#overview-5" class="sidebar-link">Overview</a></li><li class="sidebar-sub-header"><a href="/patterns/#implementations-5" class="sidebar-link">Implementations</a></li><li class="sidebar-sub-header"><a href="/patterns/#specification-5" class="sidebar-link">Specification</a></li></ul></li><li><a href="/patterns/#table-schema-foreign-keys-to-data-packages" class="sidebar-link">Table Schema: Foreign Keys to Data Packages</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/patterns/#overview-6" class="sidebar-link">Overview</a></li><li class="sidebar-sub-header"><a href="/patterns/#specification-6" class="sidebar-link">Specification</a></li></ul></li><li><a href="/patterns/#data-package-version" class="sidebar-link">Data Package Version</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/patterns/#specification-7" class="sidebar-link">Specification</a></li><li class="sidebar-sub-header"><a href="/patterns/#scenarios" class="sidebar-link">Scenarios</a></li></ul></li><li><a href="/patterns/#data-dependencies" class="sidebar-link">Data Dependencies</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/patterns/#specification-8" class="sidebar-link">Specification</a></li><li class="sidebar-sub-header"><a href="/patterns/#implementations-6" class="sidebar-link">Implementations</a></li></ul></li><li><a href="/patterns/#table-schema-metadata-properties" class="sidebar-link">Table Schema: metadata properties</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/patterns/#overview-7" class="sidebar-link">Overview</a></li><li class="sidebar-sub-header"><a href="/patterns/#use-cases" class="sidebar-link">Use cases</a></li><li class="sidebar-sub-header"><a href="/patterns/#specification-9" class="sidebar-link">Specification</a></li><li class="sidebar-sub-header"><a href="/patterns/#example-schema" class="sidebar-link">Example schema</a></li><li class="sidebar-sub-header"><a href="/patterns/#implementations-7" class="sidebar-link">Implementations</a></li></ul></li><li><a href="/patterns/#json-data-resources" class="sidebar-link">JSON Data Resources</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/patterns/#overview-8" class="sidebar-link">Overview</a></li><li class="sidebar-sub-header"><a href="/patterns/#introduction" class="sidebar-link">Introduction</a></li><li class="sidebar-sub-header"><a href="/patterns/#examples" class="sidebar-link">Examples</a></li><li class="sidebar-sub-header"><a href="/patterns/#specification-10" class="sidebar-link">Specification</a></li><li class="sidebar-sub-header"><a href="/patterns/#json-file-requirements" class="sidebar-link">JSON file requirements</a></li><li class="sidebar-sub-header"><a href="/patterns/#implementations-8" class="sidebar-link">Implementations</a></li></ul></li><li><a href="/patterns/#describing-data-package-catalogs-using-the-data-package-format" class="sidebar-link">Describing Data Package Catalogs using the Data Package Format</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/patterns/#overview-9" class="sidebar-link">Overview</a></li><li class="sidebar-sub-header"><a href="/patterns/#specification-11" class="sidebar-link">Specification</a></li><li class="sidebar-sub-header"><a href="/patterns/#implementations-9" class="sidebar-link">Implementations</a></li></ul></li><li><a href="/patterns/#table-schema-unique-constraints" class="sidebar-link">Table Schema: Unique constraints</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/patterns/#overview-10" class="sidebar-link">Overview</a></li><li class="sidebar-sub-header"><a href="/patterns/#specification-12" class="sidebar-link">Specification</a></li><li class="sidebar-sub-header"><a href="/patterns/#examples-3" class="sidebar-link">Examples</a></li><li class="sidebar-sub-header"><a href="/patterns/#implementations-10" class="sidebar-link">Implementations</a></li></ul></li></ul></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h2 id="meta"><a href="#meta" class="header-anchor">#</a> Meta</h2> <p>This document describes various patterns for solving common problems, in ways that are not (yet) specified in any Frictionless Data specification. If we see increased adoption, or wide support, for any pattern, it is a prime candidate for formalising as part of a specification.</p> <h2 id="private-properties"><a href="#private-properties" class="header-anchor">#</a> Private properties</h2> <h3 id="overview"><a href="#overview" class="header-anchor">#</a> Overview</h3> <p>Some software that implements the Frictionless Data specifications may need to store additional information on the various Frictionless Data descriptors.</p> <p>For example, a data registry that provides metadata via <code>datapackage.json</code> may wish to set an internal version or identifier that is system-specific, and should not be considered as part of the user-generated metadata.</p> <p>Properties to store such information should be considered “private”, and by convention, the names should be prefixed by an underscore <code>_</code>.</p> <h3 id="implementations"><a href="#implementations" class="header-anchor">#</a> Implementations</h3> <p>There are no known implementations at present.</p> <h3 id="specification"><a href="#specification" class="header-anchor">#</a> Specification</h3> <p>On any Frictionless Data descriptor, data that is not generated by the author/contributors, but is generated by software/a system handling the data, <code>SHOULD</code> be considered as “private”, and be prefixed by an underscore <code>_</code>.</p> <p>To demonstrate, let’s take the example of a data registry that implements <code>datapackage.json</code> for storing dataset metadata.</p> <p>A user might upload a <code>datapackage.json</code> as follows:</p> <div class="language- extra-class"><pre class="language-text"><code>{
+  &quot;name&quot;: &quot;my-package&quot;,
+  &quot;resources&quot;: [
+    {
+      &quot;name&quot;: &quot;my-resource&quot;,
+      &quot;data&quot;: [ &quot;my-resource.csv&quot; ]
+    }
+  ]
+}
+</code></pre></div><p>The registry itself may have a platform-specific version system, and increment versions on each update of the data. To store this information on the datapackage itself, the platform could save this information in a “private” <code>_platformVersion</code> property as follows:</p> <div class="language- extra-class"><pre class="language-text"><code>{
+  &quot;name&quot;: &quot;my-package&quot;,
+  &quot;_platformVersion&quot;: 7
+  &quot;resources&quot;: [
+    {
+      &quot;name&quot;: &quot;my-resource&quot;,
+      &quot;data&quot;: [ &quot;my-resource.csv&quot; ]
+    }
+  ]
+}
+</code></pre></div><p>Usage of “private” properties ensures a clear distinction between data stored on the descriptor that is user (author/contributor) defined, and any additional data that may be stored by a 3rd party.</p> <h2 id="caching-of-resources"><a href="#caching-of-resources" class="header-anchor">#</a> Caching of resources</h2> <h3 id="overview-2"><a href="#overview-2" class="header-anchor">#</a> Overview</h3> <p>All Frictionless Data specifications allow for referencing resources via http or a local filesystem.</p> <p>In the case of remote resources via http, there is always the possibility that the remote server will be unavailable, or, that the resource itself will be temporarily or permanently removed.</p> <p>Applications that are concerned with the persistent storage of data described in Frictionless Data specifications can use a <code>_cache</code> property that mirrors the functionality and usage of the <code>data</code> property, and refers to a storage location for the data that the application can fall back to if the canonical resource is unavailable.</p> <h3 id="implementations-2"><a href="#implementations-2" class="header-anchor">#</a> Implementations</h3> <p>There are no known implementations of this pattern at present.</p> <h3 id="specification-2"><a href="#specification-2" class="header-anchor">#</a> Specification</h3> <p>Implementations <code>MAY</code> handle a <code>_cache</code> property on any descriptor that supports a <code>data</code> property. In the case that the data referenced in <code>data</code> is unavailable, <code>_cache</code> should be used as a fallback to access the data. The handling of the data stored at <code>_cache</code> is beyond the scope of the specification. Implementations might store a copy of the resources in <code>data</code> at ingestion time, update at regular intervals, or any other method to keep an up-to-date, persistent copy.</p> <p>Some examples of the <code>_cache</code> property.</p> <div class="language- extra-class"><pre class="language-text"><code>{
+  &quot;name&quot;: &quot;my-package&quot;,
+  &quot;resources&quot;: [
+    {
+      &quot;name&quot;: &quot;my-resource&quot;,
+      &quot;data&quot;: [ &quot;http://example.com/data/csv/my-resource.csv&quot; ],
+      &quot;_cache&quot;: &quot;my-resource.csv&quot;
+    },
+    {
+      &quot;name&quot;: &quot;my-resource&quot;,
+      &quot;data&quot;: [ &quot;http://example.com/data/csv/my-resource.csv&quot; ],
+      &quot;_cache&quot;: &quot;http://data.registry.com/user/files/my-resource.csv&quot;
+    },
+    {
+      &quot;name&quot;: &quot;my-resource&quot;,
+      &quot;data&quot;: [
+        &quot;http://example.com/data/csv/my-resource.csv&quot;,
+        &quot;http://somewhere-else.com/data/csv/resource2.csv&quot;
+      ],
+      &quot;_cache&quot;: [
+        &quot;my-resource.csv&quot;,
+        &quot;resource2.csv&quot;
+      ]
+    },
+    {
+      &quot;name&quot;: &quot;my-resource&quot;,
+      &quot;data&quot;: [ &quot;http://example.com/data/csv/my-resource.csv&quot; ],
+      &quot;_cache&quot;: &quot;my-resource.csv&quot;
+    }
+  ]
+}
+</code></pre></div><h2 id="compression-of-resources"><a href="#compression-of-resources" class="header-anchor">#</a> Compression of resources</h2> <h3 id="overview-3"><a href="#overview-3" class="header-anchor">#</a> Overview</h3> <p>It can be argued that applying compression to data resources can make data package publishing more cost-effective and sustainable. Compressing data resources gives publishers the benefit of reduced storage and bandwidth costs and gives consumers the benefit of shorter download times.</p> <h3 id="implementations-3"><a href="#implementations-3" class="header-anchor">#</a> Implementations</h3> <ul><li><p><a href="https://github.com/frictionlessdata/tabulator-py" target="_blank" rel="noopener noreferrer">tabulator-py (Gzip and Zip support)<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></p></li> <li><p><a href="https://github.com/nimblelearn/datapackage-connector" target="_blank" rel="noopener noreferrer">datapackage-connector (Gzip support)<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></p></li> <li><p><a href="https://github.com/nimblelearn/datapackage-m" target="_blank" rel="noopener noreferrer">datapackage-m (Gzip support)<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></p></li></ul> <h3 id="specification-3"><a href="#specification-3" class="header-anchor">#</a> Specification</h3> <p>All compressed resources <code>MUST</code> have a <code>path</code> that allows the <code>compression</code> property to be inferred. If the compression can’t be inferred from the <code>path</code> property (e.g. a custom file extension is used) then the <code>compression</code> property <code>MUST</code> be used to specify the compression.</p> <p>Supported compression types:</p> <ul><li>gz</li> <li>zip</li></ul> <p>Example of a compressed resource with implied compression:</p> <div class="language- extra-class"><pre class="language-text"><code>{
+  &quot;name&quot;: &quot;data-resource-compression-example&quot;,
+  &quot;path&quot;: &quot;http://example.com/large-data-file.csv.gz&quot;,
+  &quot;title&quot;: &quot;Large Data File&quot;,
+  &quot;description&quot;: &quot;This large data file benefits from compression.&quot;,
+  &quot;format&quot;: &quot;csv&quot;,
+  &quot;mediatype&quot;: &quot;text/csv&quot;,
+  &quot;encoding&quot;: &quot;utf-8&quot;,
+  &quot;bytes&quot;: 1073741824
+}
+</code></pre></div><p>Example of a compressed resource with the <code>compression</code> property:</p> <div class="language- extra-class"><pre class="language-text"><code>{
+  &quot;name&quot;: &quot;data-resource-compression-example&quot;,
+  &quot;path&quot;: &quot;http://example.com/large-data-file.csv.gz&quot;,
+  &quot;title&quot;: &quot;Large Data File&quot;,
+  &quot;description&quot;: &quot;This large data file benefits from compression.&quot;,
+  &quot;format&quot;: &quot;csv&quot;,
+  &quot;compression&quot; : &quot;gz&quot;,
+  &quot;mediatype&quot;: &quot;text/csv&quot;,
+  &quot;encoding&quot;: &quot;utf-8&quot;,
+  &quot;bytes&quot;: 1073741824
+}
+</code></pre></div><h2 id="language-support"><a href="#language-support" class="header-anchor">#</a> Language support</h2> <h3 id="overview-4"><a href="#overview-4" class="header-anchor">#</a> Overview</h3> <p>Language support is a different concern to translation support. Language support deals with declaring the default language of a descriptor and the data it contains in the resources array. Language support makes no claim about the presence of translations when one or more languages are supported in a descriptor or in data. Via the introduction of a <code>languages</code> array to any descriptor, we can declare the default language, and any other languages that <code>SHOULD</code> be found in the descriptor and the data.</p> <h3 id="implementations-4"><a href="#implementations-4" class="header-anchor">#</a> Implementations</h3> <p>There are no known implementations of this pattern at present.</p> <h3 id="specification-4"><a href="#specification-4" class="header-anchor">#</a> Specification</h3> <p>Any Frictionless Data descriptor can declare the language configuration of its metadata and data with the <code>languages</code> array.</p> <p><code>languages</code> <code>MUST</code> be an array, and the first item in the array is the default (non-translated) language.</p> <p>If no <code>languages</code> array is present, the default language is English (<code>en</code>), and therefore is equivalent to:</p> <div class="language- extra-class"><pre class="language-text"><code>{
+  &quot;name&quot;: &quot;my-package&quot;,
+  &quot;languages&quot;: [&quot;en&quot;]
+}
+</code></pre></div><p>The presence of a languages array does not ensure that the metadata or the data has translations for all supported languages.</p> <p>The descriptor and data sources <code>MUST</code> be in the default language. The descriptor and data sources <code>MAY</code> have translations for the other languages in the array, using the same language code. <code>IF</code> a translation is not present, implementing code <code>MUST</code> fallback to the default language string.</p> <p>Example usage of <code>languages</code>, implemented in the metadata of a descriptor:</p> <div class="language- extra-class"><pre class="language-text"><code>{
+  &quot;name&quot;: &quot;sun-package&quot;,
+  &quot;languages&quot;: [&quot;es&quot;, &quot;en&quot;],
+  &quot;title&quot;: &quot;Sol&quot;
+}
+
+# which is equivalent to
+{
+  &quot;name&quot;: &quot;sun-package&quot;,
+  &quot;languages&quot;: [&quot;es&quot;, &quot;en&quot;],
+  &quot;title&quot;: {
+    &quot;&quot;: &quot;Sol&quot;,
+    &quot;en&quot;: &quot;Sun&quot;
+  }
+}
+</code></pre></div><p>Example usage of <code>languages</code> implemented in the data described by a resource:</p> <div class="language- extra-class"><pre class="language-text"><code># resource descriptor
+{
+  &quot;name&quot;: &quot;solar-system&quot;,
+  &quot;data&quot;: [ &quot;solar-system.csv&quot; ]
+  &quot;fields&quot;: [
+    ...
+  ],
+  &quot;languages&quot;: [&quot;es&quot;, &quot;en&quot;, &quot;he&quot;, &quot;fr&quot;, &quot;ar&quot;]
+}
+
+# data source
+# some languages have translations, some do not
+# assumes a certain translation pattern, see the related section
+id,name,name@fr,name@he,name@en
+1,Sol,Soleil,שמש,Sun
+2,Luna,Lune,ירח,Moon
+</code></pre></div><h2 id="translation-support"><a href="#translation-support" class="header-anchor">#</a> Translation support</h2> <h3 id="overview-5"><a href="#overview-5" class="header-anchor">#</a> Overview</h3> <p>Following on from a general pattern for language support, and the explicit support of metadata translations in Frictionless Data descriptors, it would be desirable to support translations in source data.</p> <p>We currently have two patterns for this in discussion. Both patterns arise from real-world implementations that are not specifically tied to Frictionless Data.</p> <p>One pattern suggests inline translations with the source data, reserving the <code>@</code> symbol in the naming of fields to denote translations.</p> <p>The other describes a pattern for storing additional translation sources, co-located with the “source” file described in a descriptor <code>data</code>.</p> <h3 id="implementations-5"><a href="#implementations-5" class="header-anchor">#</a> Implementations</h3> <p>There are no known implementations of this pattern in the Frictionless Data core libraries at present.</p> <h3 id="specification-5"><a href="#specification-5" class="header-anchor">#</a> Specification</h3> <h4 id="inline"><a href="#inline" class="header-anchor">#</a> Inline</h4> <p><strong>Uses a column naming convention for accessing translations</strong>.</p> <p>Tabular resource descriptors support translations using <code>{field_name}@{lang_code}</code> syntax for translated field names. <code>lang_code</code> <code>MUST</code> be present in the <code>languages</code> array that applies to the resource.</p> <p>Any field with the <code>@</code> symbol <code>MUST</code> be a translation field for another field of data, and <code>MUST</code> be parsable according to the <code>{field_name}@{lang_code}</code> pattern.</p> <p>If a translation field is found in the data that does not have a corresponding <code>field</code> (e.g.: <code>title@es</code> but no <code>title</code>), then the translation field <code>SHOULD</code> be ignored.</p> <p>If a translation field is found in the data that uses a <code>lang_code</code> <em>not</em> declared in the applied <code>languages</code> array, then the translation field <code>SHOULD</code> be ignored.</p> <p>Translation fields <code>MUST NOT</code> be described in a schema <code>fields</code> array.</p> <p>Translation fields <code>MUST</code> match the <code>type</code>, <code>format</code> and <code>constraints</code> of the field they translate, with a single exception: Translation fields are never required, and therefore <code>constraints.required</code> is always <code>false</code> for a translation field.</p> <h4 id="co-located-translation-sources"><a href="#co-located-translation-sources" class="header-anchor">#</a> Co-located translation sources</h4> <p><strong>Uses a file storage convention for accessing translations</strong>.</p> <p>To be contributed by @jheeffer</p> <ul><li>Has to handle local and remote resources</li> <li>Has to be explicit about the translation key/value  pattern in the translation files</li></ul> <div class="language- extra-class"><pre class="language-text"><code># local
+data/file1.csv
+data/lang/file1-en.csv
+data/lang/file1-es.csv
+
+# remote
+http://example/com/data/file2.csv
+http://example/com/data/lang/file2-en.csv
+http://example/com/data/lang/file2-es.csv
+</code></pre></div><h2 id="table-schema-foreign-keys-to-data-packages"><a href="#table-schema-foreign-keys-to-data-packages" class="header-anchor">#</a> Table Schema: Foreign Keys to Data Packages</h2> <h3 id="overview-6"><a href="#overview-6" class="header-anchor">#</a> Overview</h3> <p>A foreign key is a reference where values in a field (or fields) in a Tabular Data Resource link to values in a field (or fields) in a Tabular Data Resource in the same or in another Tabular Data Package.</p> <p>This pattern allows users to link values in a field (or fields) in a Tabular Data Resource to values in a field (or fields) in a Tabular Data Resource in a different Tabular Data Package.</p> <h3 id="specification-6"><a href="#specification-6" class="header-anchor">#</a> Specification</h3> <p>The <a href="/table-schema/#foreign-keys"><code>foreignKeys</code></a> array MAY have a property <code>package</code>. This property MUST be, either:</p> <ul><li>a string that is a fully qualified HTTP address to a Data Package <code>datapackage.json</code> file</li> <li>a data package <a href="/data-package/#name"><code>name</code></a> that can be resolved by a canonical data package registry</li></ul> <p>If the referenced data package has an <a href="/data-package/#id"><code>id</code></a> that is a fully qualified HTTP address, it SHOULD be used as the <code>package</code> value.</p> <p>For example:</p> <div class="language- extra-class"><pre class="language-text"><code>&quot;foreignKeys&quot;: [{
+    &quot;fields&quot;: [&quot;code&quot;],
+    &quot;reference&quot;: {
+      &quot;package&quot;: &quot;https://raw.githubusercontent.com/frictionlessdata/example-data-packages/master/donation-codes/datapackage.json&quot;,
+      &quot;resource&quot;: &quot;donation-codes&quot;,
+      &quot;fields&quot;: [&quot;donation code&quot;]
+    }
+  }]
+</code></pre></div><h2 id="data-package-version"><a href="#data-package-version" class="header-anchor">#</a> Data Package Version</h2> <h3 id="specification-7"><a href="#specification-7" class="header-anchor">#</a> Specification</h3> <p>The Data Package version format follows the <a href="http://semver.org" target="_blank" rel="noopener noreferrer">Semantic Versioning<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a> specification format: MAJOR.MINOR.PATCH</p> <p>The version numbers, and the way they change, convey meaning about how the data package has been modified from one version to the next.</p> <p>Given a Data Package version number MAJOR.MINOR.PATCH, increment the:</p> <p>MAJOR version when you make incompatible changes, e.g.</p> <ul><li>Change the data package, resource or field <code>name</code> or  <code>identifier</code></li> <li>Add, remove or re-order fields</li> <li>Change a field <code>type</code> or <code>format</code></li> <li>Change a field <code>constraint</code> to be more restrictive</li> <li>Combine, split, delete or change the meaning of data that is referenced by another data resource</li></ul> <p>MINOR version when you add data or change metadata in a backwards-compatible manner, e.g.</p> <ul><li>Add a new data resource to a data package</li> <li>Add new data to an existing data resource</li> <li>Change a field <code>constraint</code> to be less restrictive</li> <li>Update a reference to another data resource</li> <li>Change data to reflect changes in referenced data</li></ul> <p>PATCH version when you make backwards-compatible fixes, e.g.</p> <ul><li>Correct errors in existing data</li> <li>Change descriptive metadata properties</li></ul> <h3 id="scenarios"><a href="#scenarios" class="header-anchor">#</a> Scenarios</h3> <ul><li>You are developing your data though public consultation. Start your initial data release at 0.1.0</li> <li>You release your data for the first time. Use version 1.0.0</li> <li>You append last months data to an existing release. Increment the MINOR version number</li> <li>You append a column to the data. Increment the MAJOR version number</li> <li>You relocate the data to a new <code>URL</code> or <code>path</code>. No change in the version number</li> <li>You change a <code>title</code>, <code>description</code>, or other descriptive metadata. Increment the PATCH version</li> <li>You fix a data entry error by modifying a value. Increment the PATCH version</li> <li>You split a row of data in a foreign key reference table. Increment the MAJOR version number</li> <li>You update the data and schema to refer to a new version of a foreign key reference table. Increment the MINOR version number</li></ul> <h2 id="data-dependencies"><a href="#data-dependencies" class="header-anchor">#</a> Data Dependencies</h2> <p>Consider a situation where data packages are part of a tool chain that, say, loads all of the data into an SQL db. You can then imagine a situation where one requires package A which requires package B + C.</p> <p>In this case you want to specify that A depends on B and C – and that “installing” A should install B and C. This is the purpose of <code>dataDependencies</code> property.</p> <h3 id="specification-8"><a href="#specification-8" class="header-anchor">#</a> Specification</h3> <p><code>dataDependencies</code> is an object. It follows same format as CommonJS Packages spec v1.1. Each dependency defines the lowest compatible MAJOR[.MINOR[.PATCH]] dependency versions (only one per MAJOR version) with which the package has been tested and is assured to work. The version may be a simple version string (see the version property for acceptable forms), or it may be an object group of dependencies which define a set of options, any one of which satisfies the dependency. The ordering of the group is significant and earlier entries have higher priority. Example:</p> <div class="language-javascript extra-class"><pre class="language-javascript"><code><span class="token string">&quot;dataDependencies&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+   <span class="token string">&quot;country-codes&quot;</span><span class="token operator">:</span> <span class="token string">&quot;&quot;</span><span class="token punctuation">,</span>
+   <span class="token string">&quot;unemployment&quot;</span><span class="token operator">:</span> <span class="token string">&quot;2.1&quot;</span><span class="token punctuation">,</span>
+   <span class="token string">&quot;geo-boundaries&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+     <span class="token string">&quot;acmecorp-geo-boundaries&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span><span class="token string">&quot;1.0&quot;</span><span class="token punctuation">,</span> <span class="token string">&quot;2.0&quot;</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+     <span class="token string">&quot;othercorp-geo-boundaries&quot;</span><span class="token operator">:</span> <span class="token string">&quot;0.9.8&quot;</span><span class="token punctuation">,</span>
+   <span class="token punctuation">}</span><span class="token punctuation">,</span>
+<span class="token punctuation">}</span>
+</code></pre></div><h3 id="implementations-6"><a href="#implementations-6" class="header-anchor">#</a> Implementations</h3> <p>None known.</p> <h2 id="table-schema-metadata-properties"><a href="#table-schema-metadata-properties" class="header-anchor">#</a> Table Schema: metadata properties</h2> <h3 id="overview-7"><a href="#overview-7" class="header-anchor">#</a> Overview</h3> <p>Table Schemas need their own metadata to be stand-alone and interpreted without relying on other contextual informations (Data Package metadata for example). Adding metadata to describe schemas in a structured way would help users to understand them and would increase their sharing and reuse.</p> <p>Currently it is possible to add custom properties to a Table Schema, but the lack of consensus about those properties restricts common tooling and wider adoption.</p> <h3 id="use-cases"><a href="#use-cases" class="header-anchor">#</a> Use cases</h3> <ul><li>Documentation: generating Markdown documentation from the schema itself is a useful use case, and contextual information (description, version, authors…) needs to be retrieved.</li> <li>Cataloging: open data standardisation can be increased by improving Table Schemas shareability, for example by searching and categorising them (by keywords, countries, full-text…) in catalogs.</li> <li>Machine readibility: tools like Goodtables could use catalogs to access Table Schemas in order to help users validate tabular files against existing schemas. Metadata would be needed for tools to find and read those schemas.</li></ul> <h3 id="specification-9"><a href="#specification-9" class="header-anchor">#</a> Specification</h3> <p>This pattern introduces the following properties to the Table Schema spec (using <a href="https://github.com/frictionlessdata/specs/blob/master/schemas/dictionary/common.yml" target="_blank" rel="noopener noreferrer">the Frictionless Data core dictionary<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a> as much as possible):</p> <ul><li><code>name</code>: An identifier string for this schema.</li> <li><code>title</code>: A human-readable title for this schema.</li> <li><code>description</code>: A text description for this schema.</li> <li><code>keywords</code>: The keyword(s) that describe this schema.<br> <em>Tags are useful to categorise and catalog schemas.</em></li> <li><code>countryCode</code>: The ISO 3166-1 alpha-2 code for the country where this schema is primarily used.<br> <em>Since open data schemas are very country-specific, it’s useful to have this information in a structured way.</em></li> <li><code>homepage</code>: The home on the web that is related to this schema.</li> <li><code>path</code>: A fully qualified URL for this schema.<br> <em>The direct path to the schema itself can be useful to help acessing it (i.e. machine readibility).</em></li> <li><code>image</code>: An image to represent this schema.<br> <em>An optional illustration can be useful for example in catalogs to differenciate schemas in a list.</em></li> <li><code>licenses</code>: The license(s) under which this schema is published.</li> <li><code>resources</code>: Example tabular data resource(s) validated or invalidated against this schema.<br> <em>Oftentimes, schemas are shared with example resources to illustrate them, with valid or even invalid files (e.g. with constraint errors).</em></li> <li><code>sources</code>: The source(s) used to created this schema.<br> <em>In some cases, schemas are created after a legal text or some draft specification in a human-readable document. In those cases, it’s useful to share them with the schema.</em></li> <li><code>created</code>: The datetime on which this schema was created.</li> <li><code>lastModified</code>: The datetime on which this schema was last modified.</li> <li><code>version</code>: A unique version number for this schema.</li> <li><code>contributors</code>: The contributors to this schema.</li></ul> <h3 id="example-schema"><a href="#example-schema" class="header-anchor">#</a> Example schema</h3> <div class="language- extra-class"><pre class="language-text"><code>{
+  &quot;$schema&quot;: &quot;https://frictionlessdata.io/schemas/table-schema.json&quot;,
+  &quot;name&quot;: &quot;irve&quot;,
+  &quot;title&quot;: &quot;Infrastructures de recharge de véhicules électriques&quot;,
+  &quot;description&quot;: &quot;Spécification du fichier d'échange relatif aux données concernant la localisation géographique et les caractéristiques techniques des stations et des points de recharge pour véhicules électriques&quot;,
+  &quot;keywords&quot;: [
+      &quot;electric vehicle&quot;,
+      &quot;ev&quot;,
+      &quot;charging station&quot;,
+      &quot;mobility&quot;
+  ],
+  &quot;countryCode&quot;: &quot;FR&quot;,
+  &quot;homepage&quot;: &quot;https://github.com/etalab/schema-irve&quot;,
+  &quot;path&quot;: &quot;https://github.com/etalab/schema-irve/raw/v1.0.1/schema.json&quot;,
+  &quot;image&quot;: &quot;https://github.com/etalab/schema-irve/raw/v1.0.1/irve.png&quot;,
+  &quot;licenses&quot;: [
+    {
+      &quot;title&quot;: &quot;Creative Commons Zero v1.0 Universal&quot;,
+      &quot;name&quot;: &quot;CC0-1.0&quot;,
+      &quot;path&quot;: &quot;https://creativecommons.org/publicdomain/zero/1.0/&quot;  
+    }
+  ],
+  &quot;resources&quot;: [
+    {
+      &quot;title&quot;: &quot;Valid resource&quot;,
+      &quot;name&quot;: &quot;exemple-valide&quot;,
+      &quot;path&quot;: &quot;https://github.com/etalab/schema-irve/raw/v1.0.1/exemple-valide.csv&quot;
+    },
+    {
+      &quot;title&quot;: &quot;Invalid resource&quot;,
+      &quot;name&quot;: &quot;exemple-invalide&quot;,
+      &quot;path&quot;: &quot;https://github.com/etalab/schema-irve/raw/v1.0.1/exemple-invalide.csv&quot;      
+    }    
+  ],
+  &quot;sources&quot;: [
+    {
+      &quot;title&quot;: &quot;Arrêté du 12 janvier 2017 relatif aux données concernant la localisation géographique et les caractéristiques techniques des stations et des points de recharge pour véhicules électriques&quot;,      
+      &quot;path&quot;: &quot;https://www.legifrance.gouv.fr/eli/arrete/2017/1/12/ECFI1634257A/jo/texte&quot;
+    }
+  ],
+  &quot;created&quot;: &quot;2018-06-29&quot;,
+  &quot;lastModified&quot;: &quot;2019-05-06&quot;,
+  &quot;version&quot;: &quot;1.0.1&quot;,  
+  &quot;contributors&quot;: [
+    {
+      &quot;title&quot;: &quot;John Smith&quot;,
+      &quot;email&quot;: &quot;john.smith@etalab.gouv.fr&quot;,
+      &quot;organisation&quot;: &quot;Etalab&quot;,
+      &quot;role&quot;: &quot;author&quot;
+    },
+    {
+      &quot;title&quot;: &quot;Jane Doe&quot;,
+      &quot;email&quot;: &quot;jane.doe@aol.com&quot;,
+      &quot;organisation&quot;: &quot;Civil Society Organization X&quot;,
+      &quot;role&quot;: &quot;contributor&quot;
+    }
+  ],
+  &quot;fields&quot;: [ ]
+}
+</code></pre></div><h3 id="implementations-7"><a href="#implementations-7" class="header-anchor">#</a> Implementations</h3> <p>The following links are actual examples already using this pattern, but not 100 % aligned with our proposal. The point is to make the Table Schema users converge towards a common pattern, before considering changing the spec.</p> <ul><li>@OpenDataFrance has initiated the creation of <a href="http://git.opendatafrance.net/scdl/" target="_blank" rel="noopener noreferrer">Table Schemas<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a> to standardise common French open data datasets. <a href="http://scdl.opendatafrance.net/" target="_blank" rel="noopener noreferrer">Their Markdown documentation<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a> is generated automatically from the schemas (<a href="https://git.opendatafrance.net/validata/validata-doc-generator/" target="_blank" rel="noopener noreferrer">using some scripts<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a>), including contextual information.</li> <li>A tool called <a href="https://go.validata.fr/" target="_blank" rel="noopener noreferrer">Validata<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a> was developed, based on Goodtables, to help French open data producers follow the schemas. It uses metadata from the schemas to present them.</li> <li>@Etalab has launched <a href="http://schema.data.gouv.fr/" target="_blank" rel="noopener noreferrer">schema.data.gouv.fr<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a>, an official open data schema catalog, which is specific to France. <a href="https://schema.data.gouv.fr/documentation/validation-schemas#validations-sp%C3%A9cifiques-au-format-table-schema" target="_blank" rel="noopener noreferrer">It needs additional metadata in the schemas to validate them<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a>.</li> <li><a href="https://github.com/etalab/schema-irve/blob/master/schema.json" target="_blank" rel="noopener noreferrer">Example Table Schema<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a> from @Etalab using metadata properties.</li></ul> <h2 id="json-data-resources"><a href="#json-data-resources" class="header-anchor">#</a> JSON Data Resources</h2> <h3 id="overview-8"><a href="#overview-8" class="header-anchor">#</a> Overview</h3> <p>A simple format to describe a single structured JSON data resource. It includes support both for metadata such as author and title and a <a href="https://json-schema.org/" target="_blank" rel="noopener noreferrer">schema<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a> to describe the data.</p> <h3 id="introduction"><a href="#introduction" class="header-anchor">#</a> Introduction</h3> <p>A <strong>JSON Data Resource</strong> is a type of <a href="/data-resource/">Data Resource</a> specialized for describing structured JSON data.</p> <p>JSON Data Resource extends <a href="/data-resource/">Data Resource</a> in following key ways:</p> <ul><li>The <code>schema</code> property MUST follow the <a href="https://json-schema.org/" target="_blank" rel="noopener noreferrer">JSON Schema<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a> specification,<br>
+either as a JSON object directly under the property, or a string referencing another<br>
+JSON document containing the JSON Schema</li></ul> <h3 id="examples"><a href="#examples" class="header-anchor">#</a> Examples</h3> <p>A minimal JSON Data Resource, referencing external JSON documents, looks as follows.</p> <div class="language-javascript extra-class"><pre class="language-javascript"><code><span class="token comment">// with data and a schema accessible via the local filesystem</span>
+<span class="token punctuation">{</span>
+  <span class="token string">&quot;profile&quot;</span><span class="token operator">:</span> <span class="token string">&quot;json-data-resource&quot;</span><span class="token punctuation">,</span>
+  <span class="token string">&quot;name&quot;</span><span class="token operator">:</span> <span class="token string">&quot;resource-name&quot;</span><span class="token punctuation">,</span>
+  <span class="token string">&quot;path&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span> <span class="token string">&quot;resource-path.json&quot;</span> <span class="token punctuation">]</span><span class="token punctuation">,</span>
+  <span class="token string">&quot;schema&quot;</span><span class="token operator">:</span> <span class="token string">&quot;jsonschema.json&quot;</span>
+<span class="token punctuation">}</span>
+
+<span class="token comment">// with data accessible via http</span>
+<span class="token punctuation">{</span>
+  <span class="token string">&quot;profile&quot;</span><span class="token operator">:</span> <span class="token string">&quot;json-data-resource&quot;</span><span class="token punctuation">,</span>
+  <span class="token string">&quot;name&quot;</span><span class="token operator">:</span> <span class="token string">&quot;resource-name&quot;</span><span class="token punctuation">,</span>
+  <span class="token string">&quot;path&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span> <span class="token string">&quot;http://example.com/resource-path.json&quot;</span> <span class="token punctuation">]</span><span class="token punctuation">,</span>
+  <span class="token string">&quot;schema&quot;</span><span class="token operator">:</span> <span class="token string">&quot;http://example.com/jsonschema.json&quot;</span>
+<span class="token punctuation">}</span>
+</code></pre></div><p>A minimal JSON Data Resource example using the data property to inline data looks as follows.</p> <div class="language-javascript extra-class"><pre class="language-javascript"><code><span class="token punctuation">{</span>
+  <span class="token string">&quot;profile&quot;</span><span class="token operator">:</span> <span class="token string">&quot;json-data-resource&quot;</span><span class="token punctuation">,</span>
+  <span class="token string">&quot;name&quot;</span><span class="token operator">:</span> <span class="token string">&quot;resource-name&quot;</span><span class="token punctuation">,</span>
+  <span class="token string">&quot;data&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+    <span class="token string">&quot;id&quot;</span><span class="token operator">:</span> <span class="token number">1</span><span class="token punctuation">,</span>
+    <span class="token string">&quot;first_name&quot;</span><span class="token operator">:</span> <span class="token string">&quot;Louise&quot;</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token string">&quot;schema&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+    <span class="token string">&quot;type&quot;</span><span class="token operator">:</span> <span class="token string">&quot;object&quot;</span><span class="token punctuation">,</span>
+    <span class="token string">&quot;required&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+      <span class="token string">&quot;id&quot;</span>
+    <span class="token punctuation">]</span><span class="token punctuation">,</span>
+    <span class="token string">&quot;properties&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+      <span class="token string">&quot;id&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+        <span class="token string">&quot;type&quot;</span><span class="token operator">:</span> <span class="token string">&quot;integer&quot;</span>
+      <span class="token punctuation">}</span><span class="token punctuation">,</span>
+      <span class="token string">&quot;first_name&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+        <span class="token string">&quot;type&quot;</span><span class="token operator">:</span> <span class="token string">&quot;string&quot;</span>
+      <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre></div><p>A comprehensive JSON Data Resource example with all required, recommended and optional properties looks as follows.</p> <div class="language-javascript extra-class"><pre class="language-javascript"><code><span class="token punctuation">{</span>
+  <span class="token string">&quot;profile&quot;</span><span class="token operator">:</span> <span class="token string">&quot;json-data-resource&quot;</span><span class="token punctuation">,</span>
+  <span class="token string">&quot;name&quot;</span><span class="token operator">:</span> <span class="token string">&quot;solar-system&quot;</span><span class="token punctuation">,</span>
+  <span class="token string">&quot;path&quot;</span><span class="token operator">:</span> <span class="token string">&quot;http://example.com/solar-system.json&quot;</span><span class="token punctuation">,</span>
+  <span class="token string">&quot;title&quot;</span><span class="token operator">:</span> <span class="token string">&quot;The Solar System&quot;</span><span class="token punctuation">,</span>
+  <span class="token string">&quot;description&quot;</span><span class="token operator">:</span> <span class="token string">&quot;My favourite data about the solar system.&quot;</span><span class="token punctuation">,</span>
+  <span class="token string">&quot;format&quot;</span><span class="token operator">:</span> <span class="token string">&quot;json&quot;</span><span class="token punctuation">,</span>
+  <span class="token string">&quot;mediatype&quot;</span><span class="token operator">:</span> <span class="token string">&quot;application/json&quot;</span><span class="token punctuation">,</span>
+  <span class="token string">&quot;encoding&quot;</span><span class="token operator">:</span> <span class="token string">&quot;utf-8&quot;</span><span class="token punctuation">,</span>
+  <span class="token string">&quot;bytes&quot;</span><span class="token operator">:</span> <span class="token number">1</span><span class="token punctuation">,</span>
+  <span class="token string">&quot;hash&quot;</span><span class="token operator">:</span> <span class="token string">&quot;&quot;</span><span class="token punctuation">,</span>
+  <span class="token string">&quot;schema&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+    <span class="token string">&quot;$schema&quot;</span><span class="token operator">:</span> <span class="token string">&quot;http://json-schema.org/draft-07/schema#&quot;</span><span class="token punctuation">,</span>
+    <span class="token string">&quot;type&quot;</span><span class="token operator">:</span> <span class="token string">&quot;object&quot;</span><span class="token punctuation">,</span>
+    <span class="token string">&quot;required&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+      <span class="token string">&quot;id&quot;</span>
+    <span class="token punctuation">]</span><span class="token punctuation">,</span>
+    <span class="token string">&quot;properties&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+      <span class="token string">&quot;id&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+        <span class="token string">&quot;type&quot;</span><span class="token operator">:</span> <span class="token string">&quot;integer&quot;</span>
+      <span class="token punctuation">}</span><span class="token punctuation">,</span>
+      <span class="token string">&quot;name&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+        <span class="token string">&quot;type&quot;</span><span class="token operator">:</span> <span class="token string">&quot;string&quot;</span>
+      <span class="token punctuation">}</span>
+      <span class="token string">&quot;description&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+        <span class="token string">&quot;type&quot;</span><span class="token operator">:</span> <span class="token string">&quot;string&quot;</span>
+      <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token string">&quot;sources&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span><span class="token punctuation">{</span>
+    <span class="token string">&quot;title&quot;</span><span class="token operator">:</span> <span class="token string">&quot;The Solar System - 2001&quot;</span><span class="token punctuation">,</span>
+    <span class="token string">&quot;path&quot;</span><span class="token operator">:</span> <span class="token string">&quot;http://example.com/solar-system-2001.json&quot;</span><span class="token punctuation">,</span>
+    <span class="token string">&quot;email&quot;</span><span class="token operator">:</span> <span class="token string">&quot;&quot;</span>
+  <span class="token punctuation">}</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+  <span class="token string">&quot;licenses&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span><span class="token punctuation">{</span>
+    <span class="token string">&quot;name&quot;</span><span class="token operator">:</span> <span class="token string">&quot;CC-BY-4.0&quot;</span><span class="token punctuation">,</span>
+    <span class="token string">&quot;title&quot;</span><span class="token operator">:</span> <span class="token string">&quot;Creative Commons Attribution 4.0&quot;</span><span class="token punctuation">,</span>
+    <span class="token string">&quot;path&quot;</span><span class="token operator">:</span> <span class="token string">&quot;https://creativecommons.org/licenses/by/4.0/&quot;</span>
+  <span class="token punctuation">}</span><span class="token punctuation">]</span>
+<span class="token punctuation">}</span>
+</code></pre></div><h3 id="specification-10"><a href="#specification-10" class="header-anchor">#</a> Specification</h3> <p>A JSON Data Resource MUST be a <a href="/data-resource/">Data Resource</a>, that is it MUST conform to the <a href="/data-resource/">Data Resource specification</a>.</p> <p>In addition:</p> <ul><li>The Data Resource <code>schema</code> property MUST follow the <a href="https://json-schema.org/" target="_blank" rel="noopener noreferrer">JSON Schema<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a> specification,<br>
+either as a JSON object directly under the property, or a string referencing another<br>
+JSON document containing the JSON Schema</li></ul> <ul><li>There <code>MUST</code> be a <code>profile</code> property with the value <code>json-data-resource</code></li></ul> <ul><li>The data the Data Resource describes MUST, if non-inline, be a JSON file</li></ul> <h3 id="json-file-requirements"><a href="#json-file-requirements" class="header-anchor">#</a> JSON file requirements</h3> <p>When <code>&quot;format&quot;: &quot;json&quot;</code>, files must strictly follow the <a href="https://www.json.org/" target="_blank" rel="noopener noreferrer">JSON specification<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a>. Some implementations <code>MAY</code> support <code>&quot;format&quot;: &quot;jsonc&quot;</code>, allowing for non-standard single line and block comments (<code>//</code> and <code>/* */</code> respectively).</p> <h3 id="implementations-8"><a href="#implementations-8" class="header-anchor">#</a> Implementations</h3> <p>None known.</p> <h2 id="describing-data-package-catalogs-using-the-data-package-format"><a href="#describing-data-package-catalogs-using-the-data-package-format" class="header-anchor">#</a> Describing Data Package Catalogs using the Data Package Format</h2> <h3 id="overview-9"><a href="#overview-9" class="header-anchor">#</a> Overview</h3> <p>There are scenarios where one needs to describe a collection of data packages, such as when building an online registry, or when building a pipeline that ingests multiple datasets.</p> <p>In these scenarios, the collection can be described using a “Catalog”, where each dataset is represented as a single resource which has:</p> <div class="language-json extra-class"><pre class="language-json"><code><span class="token punctuation">{</span>
+    <span class="token property">&quot;profile&quot;</span><span class="token operator">:</span> <span class="token string">&quot;data-package&quot;</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;format&quot;</span><span class="token operator">:</span> <span class="token string">&quot;json&quot;</span>
+<span class="token punctuation">}</span>
+</code></pre></div><h3 id="specification-11"><a href="#specification-11" class="header-anchor">#</a> Specification</h3> <p>The Data Package Catalog builds directly on the Data Package specification. Thus a Data Package Catalog <code>MUST</code> be a Data Package and conform to the <a href="/data-package/">Data Package specification</a>.</p> <p>The Data Package Catalog has the following requirements over and above those imposed by Data Package:</p> <ul><li>There <code>MUST</code> be a <code>profile</code> property with the value <code>data-package-catalog</code>, or a <code>profile</code> that extends it</li> <li>Each resource <code>MUST</code> also be a Data Package</li></ul> <h4 id="examples-2"><a href="#examples-2" class="header-anchor">#</a> Examples</h4> <p>A generic package catalog:</p> <div class="language-json extra-class"><pre class="language-json"><code><span class="token punctuation">{</span>
+  <span class="token property">&quot;profile&quot;</span><span class="token operator">:</span> <span class="token string">&quot;data-package-catalog&quot;</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;name&quot;</span><span class="token operator">:</span> <span class="token string">&quot;climate-change-packages&quot;</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;resources&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+    <span class="token punctuation">{</span>
+      <span class="token property">&quot;profile&quot;</span><span class="token operator">:</span> <span class="token string">&quot;json-data-package&quot;</span><span class="token punctuation">,</span>
+      <span class="token property">&quot;format&quot;</span><span class="token operator">:</span> <span class="token string">&quot;json&quot;</span><span class="token punctuation">,</span>
+      <span class="token property">&quot;name&quot;</span><span class="token operator">:</span> <span class="token string">&quot;beacon-network-description&quot;</span><span class="token punctuation">,</span>
+      <span class="token property">&quot;path&quot;</span><span class="token operator">:</span> <span class="token string">&quot;https://http://beacon.berkeley.edu/hypothetical_deployment_description.json&quot;</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token punctuation">{</span>
+      <span class="token property">&quot;profile&quot;</span><span class="token operator">:</span> <span class="token string">&quot;tabular-data-package&quot;</span><span class="token punctuation">,</span>
+      <span class="token property">&quot;format&quot;</span><span class="token operator">:</span> <span class="token string">&quot;json&quot;</span><span class="token punctuation">,</span>
+      <span class="token property">&quot;path&quot;</span><span class="token operator">:</span> <span class="token string">&quot;https://pkgstore.datahub.io/core/co2-ppm/10/datapackage.json&quot;</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token punctuation">{</span>
+      <span class="token property">&quot;profile&quot;</span><span class="token operator">:</span> <span class="token string">&quot;tabular-data-package&quot;</span><span class="token punctuation">,</span>
+      <span class="token property">&quot;name&quot;</span><span class="token operator">:</span> <span class="token string">&quot;co2-fossil-global&quot;</span><span class="token punctuation">,</span>
+      <span class="token property">&quot;format&quot;</span><span class="token operator">:</span> <span class="token string">&quot;json&quot;</span><span class="token punctuation">,</span>
+      <span class="token property">&quot;path&quot;</span><span class="token operator">:</span> <span class="token string">&quot;https://pkgstore.datahub.io/core/co2-fossil-global/11/datapackage.json&quot;</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">]</span>
+<span class="token punctuation">}</span>
+</code></pre></div><p>A minimal tabular data catalog:</p> <div class="language-json extra-class"><pre class="language-json"><code><span class="token punctuation">{</span>
+  <span class="token property">&quot;profile&quot;</span><span class="token operator">:</span> <span class="token string">&quot;tabular-data-package-catalog&quot;</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;name&quot;</span><span class="token operator">:</span> <span class="token string">&quot;datahub-climate-change-packages&quot;</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;resources&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+    <span class="token punctuation">{</span>
+      <span class="token property">&quot;path&quot;</span><span class="token operator">:</span> <span class="token string">&quot;https://pkgstore.datahub.io/core/co2-ppm/10/datapackage.json&quot;</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token punctuation">{</span>
+      <span class="token property">&quot;name&quot;</span><span class="token operator">:</span> <span class="token string">&quot;co2-fossil-global&quot;</span><span class="token punctuation">,</span>
+      <span class="token property">&quot;path&quot;</span><span class="token operator">:</span> <span class="token string">&quot;https://pkgstore.datahub.io/core/co2-fossil-global/11/datapackage.json&quot;</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">]</span>
+<span class="token punctuation">}</span>
+</code></pre></div><p>Data packages can also be declared inline in the data catalog:</p> <div class="language-json extra-class"><pre class="language-json"><code><span class="token punctuation">{</span>
+  <span class="token property">&quot;profile&quot;</span><span class="token operator">:</span> <span class="token string">&quot;tabular-data-package-catalog&quot;</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;name&quot;</span><span class="token operator">:</span> <span class="token string">&quot;my-data-catalog&quot;</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;resources&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+    <span class="token punctuation">{</span>
+      <span class="token property">&quot;profile&quot;</span><span class="token operator">:</span> <span class="token string">&quot;tabular-data-package&quot;</span><span class="token punctuation">,</span>
+      <span class="token property">&quot;name&quot;</span><span class="token operator">:</span> <span class="token string">&quot;my-dataset&quot;</span><span class="token punctuation">,</span>
+      <span class="token comment">// here we list the data files in this dataset</span>
+      <span class="token property">&quot;resources&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+        <span class="token punctuation">{</span>
+          <span class="token property">&quot;profile&quot;</span><span class="token operator">:</span> <span class="token string">&quot;tabular-data-resource&quot;</span><span class="token punctuation">,</span>
+          <span class="token property">&quot;name&quot;</span><span class="token operator">:</span> <span class="token string">&quot;resource-name&quot;</span><span class="token punctuation">,</span>
+          <span class="token property">&quot;data&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+            <span class="token punctuation">{</span>
+              <span class="token property">&quot;id&quot;</span><span class="token operator">:</span> <span class="token number">1</span><span class="token punctuation">,</span>
+              <span class="token property">&quot;first_name&quot;</span><span class="token operator">:</span> <span class="token string">&quot;Louise&quot;</span>
+            <span class="token punctuation">}</span><span class="token punctuation">,</span>
+            <span class="token punctuation">{</span>
+              <span class="token property">&quot;id&quot;</span><span class="token operator">:</span> <span class="token number">2</span><span class="token punctuation">,</span>
+              <span class="token property">&quot;first_name&quot;</span><span class="token operator">:</span> <span class="token string">&quot;Julia&quot;</span>
+            <span class="token punctuation">}</span>
+          <span class="token punctuation">]</span><span class="token punctuation">,</span>
+          <span class="token property">&quot;schema&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+            <span class="token property">&quot;fields&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+              <span class="token punctuation">{</span>
+                <span class="token property">&quot;name&quot;</span><span class="token operator">:</span> <span class="token string">&quot;id&quot;</span><span class="token punctuation">,</span>
+                <span class="token property">&quot;type&quot;</span><span class="token operator">:</span> <span class="token string">&quot;integer&quot;</span>
+              <span class="token punctuation">}</span><span class="token punctuation">,</span>
+              <span class="token punctuation">{</span>
+                <span class="token property">&quot;name&quot;</span><span class="token operator">:</span> <span class="token string">&quot;first_name&quot;</span><span class="token punctuation">,</span>
+                <span class="token property">&quot;type&quot;</span><span class="token operator">:</span> <span class="token string">&quot;string&quot;</span>
+              <span class="token punctuation">}</span>
+            <span class="token punctuation">]</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;primaryKey&quot;</span><span class="token operator">:</span> <span class="token string">&quot;id&quot;</span>
+          <span class="token punctuation">}</span>
+        <span class="token punctuation">}</span>
+      <span class="token punctuation">]</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">]</span>
+<span class="token punctuation">}</span>
+</code></pre></div><h3 id="implementations-9"><a href="#implementations-9" class="header-anchor">#</a> Implementations</h3> <p>None known.</p> <h2 id="table-schema-unique-constraints"><a href="#table-schema-unique-constraints" class="header-anchor">#</a> Table Schema: Unique constraints</h2> <h3 id="overview-10"><a href="#overview-10" class="header-anchor">#</a> Overview</h3> <p>A <code>primaryKey</code> uniquely identifies each row in a table. Per SQL standards, it<br>
+cannot contain <code>null</code> values. This pattern implements the SQL UNIQUE constraint<br>
+by introducing a <code>uniqueKeys</code> array, defining one or more row uniqueness<br>
+constraints which do support <code>null</code> values. An additional <code>uniqueNulls</code> property<br>
+controls how <code>null</code> values are to be treated in unique constraints.</p> <h3 id="specification-12"><a href="#specification-12" class="header-anchor">#</a> Specification</h3> <h4 id="uniquekeys-add"><a href="#uniquekeys-add" class="header-anchor">#</a> <code>uniqueKeys</code> (add)</h4> <p>The <code>uniqueKeys</code> property, if present, <code>MUST</code> be an array. Each entry<br>
+(<code>uniqueKey</code>) in the array <code>MUST</code> be a string or array (structured as per<br> <code>primaryKey</code>) specifying the resource field or fields required to be unique for<br>
+each row in the table.</p> <h4 id="uniquenulls-add"><a href="#uniquenulls-add" class="header-anchor">#</a> <code>uniqueNulls</code> (add)</h4> <p>The <code>uniqueNulls</code> property is a boolean that dictates how <code>null</code> values should<br>
+be treated by all unique constraints set on a resource.</p> <ul><li>If <code>true</code> (the default), <code>null</code> values are treated as unique (per most SQL<br>
+databases). By this definition, <code>1, null, null</code> is UNIQUE.</li> <li>If <code>false</code>, <code>null</code> values are treated like any other value (per Microsoft SQL<br>
+Server, Python pandas, R data.frame, Google Sheets). By this definition, <code>1, null, null</code> is NOT UNIQUE.</li></ul> <h4 id="foreignkeys-edit"><a href="#foreignkeys-edit" class="header-anchor">#</a> <code>foreignKeys</code> (edit)</h4> <p>Per SQL standards, <code>null</code> values are permitted in both the local and reference<br>
+keys of a foreign key. However, reference keys <code>MUST</code> be unique and are<br>
+therefore equivalent to a <code>uniqueKey</code> set on the reference resource (the meaning<br>
+of which is determined by the reference <code>uniqueNulls</code>).</p> <p>Furthermore, per SQL standards, the local key <code>MAY</code> contain keys with field<br>
+values not present in the reference key if and only if at least one of the<br>
+fields is locally <code>null</code>. For example, <code>(1, null)</code> is permitted locally even if<br>
+the reference is <code>[(2, 1), (3, 1)]</code>. This behavior is the same regardless of the<br>
+value of <code>uniqueNulls</code>.</p> <h3 id="examples-3"><a href="#examples-3" class="header-anchor">#</a> Examples</h3> <h4 id="null-in-unique-constraints"><a href="#null-in-unique-constraints" class="header-anchor">#</a> <code>null</code> in unique constraints</h4> <table><thead><tr><th>a</th> <th>b</th> <th>c</th> <th>d</th></tr></thead> <tbody><tr><td>1</td> <td>1</td> <td>1</td> <td>1</td></tr> <tr><td>2</td> <td>2</td> <td><code>null</code></td> <td>2</td></tr> <tr><td>3</td> <td>2</td> <td><code>null</code></td> <td><code>null</code></td></tr></tbody></table> <p>The above table meets the following primary key and two unique key constraints:</p> <div class="language-json extra-class"><pre class="language-json"><code><span class="token punctuation">{</span>
+  <span class="token property">&quot;primaryKey&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span><span class="token string">&quot;a&quot;</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;uniqueKeys&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+    <span class="token punctuation">[</span><span class="token string">&quot;b&quot;</span><span class="token punctuation">,</span> <span class="token string">&quot;c&quot;</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+    <span class="token punctuation">[</span><span class="token string">&quot;c&quot;</span><span class="token punctuation">,</span> <span class="token string">&quot;d&quot;</span><span class="token punctuation">]</span>
+  <span class="token punctuation">]</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;uniqueNulls&quot;</span><span class="token operator">:</span> <span class="token boolean">true</span>
+<span class="token punctuation">}</span>
+</code></pre></div><p>The primary key <code>(a)</code> only contains unique, non-<code>null</code> values. In contrast, the<br>
+unique keys can contain <code>null</code> values. Although unique key <code>(b, c)</code> contains two<br>
+identical keys <code>(2, null)</code>, this is permitted because <code>uniqueNulls: true</code><br>
+specifies that <code>null</code> values are unique. This behavior is consistent with the<br>
+UNIQUE constraint of PostgreSQL and most other SQL implementations, as<br>
+illustrated by this<br> <a href="https://dbfiddle.uk/?rdbms=postgres_11&amp;fiddle=34cab8ba7d74b488d215a96f7e83c096" target="_blank" rel="noopener noreferrer">dbfiddle<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a>.<br>
+The same keys would be considered duplicates if <code>uniqueNulls: false</code>, consistent<br>
+with the UNIQUE constraint of Microsoft SQL Server, as illustrated by this<br> <a href="https://dbfiddle.uk/?rdbms=sqlserver_2019l&amp;fiddle=34cab8ba7d74b488d215a96f7e83c096" target="_blank" rel="noopener noreferrer">dbfiddle<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a>.</p> <h4 id="setting-unique-constraints"><a href="#setting-unique-constraints" class="header-anchor">#</a> Setting unique constraints</h4> <p>For a given resource, unique constraints can be set for one field using a<br>
+field’s <code>unique</code> constraint, for one or multiple fields using a <code>uniqueKey</code>, and<br>
+for one or multiple fields using a <code>foreignKey</code> referencing the resource. Each<br>
+of the following examples set a unique constraint on field <code>a</code>:</p> <p><strong>Field <code>constraints</code></strong></p> <div class="language-json extra-class"><pre class="language-json"><code><span class="token punctuation">{</span>
+  <span class="token property">&quot;fields&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+    <span class="token punctuation">{</span>
+      <span class="token property">&quot;name&quot;</span><span class="token operator">:</span> <span class="token string">&quot;a&quot;</span><span class="token punctuation">,</span>
+      <span class="token property">&quot;constraints&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+        <span class="token property">&quot;unique&quot;</span><span class="token operator">:</span> <span class="token boolean">true</span>
+      <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">]</span>
+<span class="token punctuation">}</span>
+</code></pre></div><p><strong><code>uniqueKeys</code></strong></p> <div class="language-json extra-class"><pre class="language-json"><code><span class="token punctuation">{</span>
+  <span class="token property">&quot;uniqueKeys&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+    <span class="token string">&quot;a&quot;</span>
+  <span class="token punctuation">]</span>
+<span class="token punctuation">}</span>
+</code></pre></div><p><strong><code>foreignKeys</code></strong></p> <div class="language-json extra-class"><pre class="language-json"><code><span class="token punctuation">{</span>
+  <span class="token property">&quot;foreignKeys&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+    <span class="token punctuation">{</span>
+      <span class="token property">&quot;fields&quot;</span><span class="token operator">:</span> <span class="token string">&quot;a&quot;</span><span class="token punctuation">,</span>
+      <span class="token property">&quot;reference&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+        <span class="token property">&quot;resource&quot;</span><span class="token operator">:</span> <span class="token string">&quot;&quot;</span><span class="token punctuation">,</span>
+        <span class="token property">&quot;fields&quot;</span><span class="token operator">:</span> <span class="token string">&quot;a&quot;</span>
+      <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">]</span>
+<span class="token punctuation">}</span>
+</code></pre></div><h3 id="implementations-10"><a href="#implementations-10" class="header-anchor">#</a> Implementations</h3> <p>None known.</p></div> <footer class="page-edit"><div class="edit-link"><a href="https://github.com/frictionlessdata/specs/edit/master/patterns/README.md" target="_blank" rel="noopener noreferrer">Edit this page</a> <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></div> <!----></footer> <!----> </main></div><div class="global-ui"></div></div>
+    <script src="/assets/js/app.0a3985f5.js" defer></script><script src="/assets/js/3.f7dbc0b9.js" defer></script><script src="/assets/js/1.024d35fb.js" defer></script><script src="/assets/js/19.5ae6a7ce.js" defer></script>
+  </body>
+</html>

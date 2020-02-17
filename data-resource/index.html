@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Data Resource | Frictionless Data Specs</title>
+    <meta name="description" content="">
+    <meta name="generator" content="VuePress 1.3.0">
+    
+    
+    <link rel="preload" href="/assets/css/0.styles.c6f44f18.css" as="style"><link rel="preload" href="/assets/js/app.0a3985f5.js" as="script"><link rel="preload" href="/assets/js/4.c6f950b7.js" as="script"><link rel="preload" href="/assets/js/1.024d35fb.js" as="script"><link rel="preload" href="/assets/js/14.1b0e4f2f.js" as="script"><link rel="prefetch" href="/assets/js/10.b8abbbc5.js"><link rel="prefetch" href="/assets/js/11.96eaaa0c.js"><link rel="prefetch" href="/assets/js/12.87689947.js"><link rel="prefetch" href="/assets/js/13.b5b5a67a.js"><link rel="prefetch" href="/assets/js/15.f6a57e6c.js"><link rel="prefetch" href="/assets/js/16.89e0d525.js"><link rel="prefetch" href="/assets/js/17.e6a1331a.js"><link rel="prefetch" href="/assets/js/18.6f755841.js"><link rel="prefetch" href="/assets/js/19.5ae6a7ce.js"><link rel="prefetch" href="/assets/js/20.503f1688.js"><link rel="prefetch" href="/assets/js/21.743fdbf7.js"><link rel="prefetch" href="/assets/js/22.e9f01260.js"><link rel="prefetch" href="/assets/js/23.eb4f680e.js"><link rel="prefetch" href="/assets/js/24.890aa077.js"><link rel="prefetch" href="/assets/js/25.b5a746ae.js"><link rel="prefetch" href="/assets/js/26.ec3a904c.js"><link rel="prefetch" href="/assets/js/27.6f5b39e6.js"><link rel="prefetch" href="/assets/js/3.f7dbc0b9.js"><link rel="prefetch" href="/assets/js/5.28eebc52.js"><link rel="prefetch" href="/assets/js/6.f1e99938.js"><link rel="prefetch" href="/assets/js/7.cb6bba19.js"><link rel="prefetch" href="/assets/js/8.98578714.js"><link rel="prefetch" href="/assets/js/9.72ba6340.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.c6f44f18.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container main specs"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><img src="/logo-dot.svg" alt="Frictionless Data Specs" class="logo"> <span class="site-name can-hide">Frictionless Data Specs</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/" class="nav-link">
+  Home
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Specifications" class="dropdown-title"><span class="title">Specifications</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/csv-dialect/" class="nav-link">
+  CSV Dialect
+</a></li><li class="dropdown-item"><!----> <a href="/data-package/" class="nav-link">
+  Data Package
+</a></li><li class="dropdown-item"><!----> <a href="/data-package-identifier/" class="nav-link">
+  Data Package Identifier
+</a></li><li class="dropdown-item"><!----> <a href="/data-resource/" class="nav-link router-link-exact-active router-link-active">
+  Data Resource
+</a></li><li class="dropdown-item"><!----> <a href="/fiscal-data-package/" class="nav-link">
+  Fiscal Data Package
+</a></li><li class="dropdown-item"><!----> <a href="/fiscal-data-package--budgets/" class="nav-link">
+  Fiscal Data Package - Budgets
+</a></li><li class="dropdown-item"><!----> <a href="/fiscal-data-package--spending/" class="nav-link">
+  Fiscal Data Package - Spending
+</a></li><li class="dropdown-item"><!----> <a href="/profiles/" class="nav-link">
+  Profiles
+</a></li><li class="dropdown-item"><!----> <a href="/security/" class="nav-link">
+  Security
+</a></li><li class="dropdown-item"><!----> <a href="/table-schema/" class="nav-link">
+  Table Schema
+</a></li><li class="dropdown-item"><!----> <a href="/tabular-data-package/" class="nav-link">
+  Tabular Data Package
+</a></li><li class="dropdown-item"><!----> <a href="/tabular-data-resource/" class="nav-link">
+  Tabular Data Resource
+</a></li><li class="dropdown-item"><!----> <a href="/views/" class="nav-link">
+  Views
+</a></li></ul></div></div><div class="nav-item"><a href="/changelog/" class="nav-link">
+  Changelog
+</a></div><div class="nav-item"><a href="/patterns/" class="nav-link">
+  Patterns
+</a></div><div class="nav-item"><a href="/implementation/" class="nav-link">
+  Implementation
+</a></div> <a href="https://github.com/frictionlessdata/specs" target="_blank" rel="noopener noreferrer" class="repo-link">
+    GitHub
+    <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/" class="nav-link">
+  Home
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Specifications" class="dropdown-title"><span class="title">Specifications</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/csv-dialect/" class="nav-link">
+  CSV Dialect
+</a></li><li class="dropdown-item"><!----> <a href="/data-package/" class="nav-link">
+  Data Package
+</a></li><li class="dropdown-item"><!----> <a href="/data-package-identifier/" class="nav-link">
+  Data Package Identifier
+</a></li><li class="dropdown-item"><!----> <a href="/data-resource/" class="nav-link router-link-exact-active router-link-active">
+  Data Resource
+</a></li><li class="dropdown-item"><!----> <a href="/fiscal-data-package/" class="nav-link">
+  Fiscal Data Package
+</a></li><li class="dropdown-item"><!----> <a href="/fiscal-data-package--budgets/" class="nav-link">
+  Fiscal Data Package - Budgets
+</a></li><li class="dropdown-item"><!----> <a href="/fiscal-data-package--spending/" class="nav-link">
+  Fiscal Data Package - Spending
+</a></li><li class="dropdown-item"><!----> <a href="/profiles/" class="nav-link">
+  Profiles
+</a></li><li class="dropdown-item"><!----> <a href="/security/" class="nav-link">
+  Security
+</a></li><li class="dropdown-item"><!----> <a href="/table-schema/" class="nav-link">
+  Table Schema
+</a></li><li class="dropdown-item"><!----> <a href="/tabular-data-package/" class="nav-link">
+  Tabular Data Package
+</a></li><li class="dropdown-item"><!----> <a href="/tabular-data-resource/" class="nav-link">
+  Tabular Data Resource
+</a></li><li class="dropdown-item"><!----> <a href="/views/" class="nav-link">
+  Views
+</a></li></ul></div></div><div class="nav-item"><a href="/changelog/" class="nav-link">
+  Changelog
+</a></div><div class="nav-item"><a href="/patterns/" class="nav-link">
+  Patterns
+</a></div><div class="nav-item"><a href="/implementation/" class="nav-link">
+  Implementation
+</a></div> <a href="https://github.com/frictionlessdata/specs" target="_blank" rel="noopener noreferrer" class="repo-link">
+    GitHub
+    <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></nav>  <ul class="sidebar-links"><li><section class="sidebar-group depth-0"><p class="sidebar-heading open"><span>Data Resource</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/data-resource/#introduction" class="sidebar-link">Introduction</a><ul class="sidebar-sub-headers"></ul></li><li><a href="/data-resource/#examples" class="sidebar-link">Examples</a><ul class="sidebar-sub-headers"></ul></li><li><a href="/data-resource/#descriptor" class="sidebar-link">Descriptor</a><ul class="sidebar-sub-headers"></ul></li><li><a href="/data-resource/#data-location" class="sidebar-link">Data Location</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/data-resource/#path-data-in-files" class="sidebar-link">path Data in Files</a></li><li class="sidebar-sub-header"><a href="/data-resource/#data-inline-data" class="sidebar-link">data Inline Data</a></li></ul></li><li><a href="/data-resource/#metadata-properties" class="sidebar-link">Metadata Properties</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/data-resource/#required-properties" class="sidebar-link">Required Properties</a></li><li class="sidebar-sub-header"><a href="/data-resource/#recommended-properties" class="sidebar-link">Recommended Properties</a></li><li class="sidebar-sub-header"><a href="/data-resource/#optional-properties" class="sidebar-link">Optional Properties</a></li></ul></li><li><a href="/data-resource/#resource-schemas" class="sidebar-link">Resource Schemas</a><ul class="sidebar-sub-headers"></ul></li></ul></section></li></ul> </aside> <h1> Data Resource </h1> <table class="frm-table"><tbody><tr><th> Author </th> <td>  </td></tr> <tr></tr><tr><th> Created </th> <td> 11 December 2016 </td></tr> <tr></tr><tr><th> Updated </th> <td> 17 April 2018 </td></tr> <tr><th> JSON Schema </th> <td> dataresource.json </td></tr> <tr><th> Version </th> <td> 1.0-rc.2 </td></tr></tbody></table> <div class="content__default"><h2 id="introduction"><a href="#introduction" class="header-anchor">#</a> Introduction</h2> <p>The <strong>Data Resource</strong> format describes a data resource such as an individual file or table.<br>
+The essence of a Data Resource is a locator for the data it describes.<br>
+A range of other properties can be declared to provide a richer set of metadata.</p> <h2 id="examples"><a href="#examples" class="header-anchor">#</a> Examples</h2> <p>A minimal Data Resource looks as follows:</p> <p>With data accessible via the local filesystem.</p> <div class="language-javascript extra-class"><pre class="language-javascript"><code><span class="token punctuation">{</span>
+  <span class="token string">&quot;path&quot;</span><span class="token operator">:</span> <span class="token string">&quot;resource-path.csv&quot;</span>
+<span class="token punctuation">}</span>
+</code></pre></div><p>With data accessible via http.</p> <div class="language-javascript extra-class"><pre class="language-javascript"><code><span class="token punctuation">{</span>
+  <span class="token string">&quot;path&quot;</span><span class="token operator">:</span> <span class="token string">&quot;http://example.com/resource-path.csv&quot;</span>
+<span class="token punctuation">}</span>
+</code></pre></div><p>A minimal Data Resource pointing to some inline data looks as follows.</p> <div class="language-javascript extra-class"><pre class="language-javascript"><code><span class="token punctuation">{</span>
+  <span class="token string">&quot;data&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+    <span class="token string">&quot;resource-name-data&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+      <span class="token punctuation">{</span><span class="token string">&quot;a&quot;</span><span class="token operator">:</span> <span class="token number">1</span><span class="token punctuation">,</span> <span class="token string">&quot;b&quot;</span><span class="token operator">:</span> <span class="token number">2</span><span class="token punctuation">}</span>
+    <span class="token punctuation">]</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+<span class="token punctuation">}</span>
+</code></pre></div><p>A comprehensive Data Resource example with all required, recommended and optional properties looks as follows.</p> <div class="language-javascript extra-class"><pre class="language-javascript"><code><span class="token punctuation">{</span>
+  <span class="token string">&quot;name&quot;</span><span class="token operator">:</span> <span class="token string">&quot;solar-system&quot;</span><span class="token punctuation">,</span>
+  <span class="token string">&quot;path&quot;</span><span class="token operator">:</span> <span class="token string">&quot;http://example.com/solar-system.csv&quot;</span><span class="token punctuation">,</span>
+  <span class="token string">&quot;title&quot;</span><span class="token operator">:</span> <span class="token string">&quot;The Solar System&quot;</span><span class="token punctuation">,</span>
+  <span class="token string">&quot;description&quot;</span><span class="token operator">:</span> <span class="token string">&quot;My favourite data about the solar system.&quot;</span><span class="token punctuation">,</span>
+  <span class="token string">&quot;format&quot;</span><span class="token operator">:</span> <span class="token string">&quot;csv&quot;</span><span class="token punctuation">,</span>
+  <span class="token string">&quot;mediatype&quot;</span><span class="token operator">:</span> <span class="token string">&quot;text/csv&quot;</span><span class="token punctuation">,</span>
+  <span class="token string">&quot;encoding&quot;</span><span class="token operator">:</span> <span class="token string">&quot;utf-8&quot;</span><span class="token punctuation">,</span>
+  <span class="token string">&quot;bytes&quot;</span><span class="token operator">:</span> <span class="token number">1</span><span class="token punctuation">,</span>
+  <span class="token string">&quot;hash&quot;</span><span class="token operator">:</span> <span class="token string">&quot;&quot;</span><span class="token punctuation">,</span>
+  <span class="token string">&quot;schema&quot;</span><span class="token operator">:</span> <span class="token string">&quot;&quot;</span><span class="token punctuation">,</span>
+  <span class="token string">&quot;sources&quot;</span><span class="token operator">:</span> <span class="token string">&quot;&quot;</span><span class="token punctuation">,</span>
+  <span class="token string">&quot;licenses&quot;</span><span class="token operator">:</span> <span class="token string">&quot;&quot;</span>
+<span class="token punctuation">}</span>
+</code></pre></div><h2 id="descriptor"><a href="#descriptor" class="header-anchor">#</a> Descriptor</h2> <p>A Data Resource descriptor MUST be a valid JSON <code>object</code>. (JSON is defined in <a href="http://www.ietf.org/rfc/rfc4627.txt" target="_blank" rel="noopener noreferrer">RFC 4627<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a>).</p> <p>Key properties of the descriptor are described below. A descriptor MAY include any number of properties in additional to those described below as required and optional properties.</p> <h2 id="data-location"><a href="#data-location" class="header-anchor">#</a> Data Location</h2> <p>A resource MUST contain a property describing the location of the<br>
+data associated to the resource. The location of resource data MUST be<br>
+specified by the presence of one (and only one) of these two properties:</p> <ul><li><code>path</code>: for data in files located online or locally on disk.</li> <li><code>data</code>: for data inline in the descriptor itself.</li></ul> <h3 id="path-data-in-files"><a href="#path-data-in-files" class="header-anchor">#</a> <code>path</code> Data in Files</h3> <p><code>path</code> MUST be a string – or an array of strings (see “Data in Multiple<br>
+Files”). Each string MUST be a “url-or-path” as defined in the next section.</p> <h4 id="url-or-path"><a href="#url-or-path" class="header-anchor">#</a> URL or Path</h4> <p>A “url-or-path” is a <code>string</code> with the following additional constraints:</p> <ul><li><code>MUST</code> either be a URL or a POSIX path</li> <li><a href="https://en.wikipedia.org/wiki/Uniform_Resource_Locator" target="_blank" rel="noopener noreferrer">URLs<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a> MUST be fully qualified. MUST be using either http or https scheme. (Absence of a scheme indicates <code>MUST</code> be a POSIX path)</li> <li><a href="https://en.wikipedia.org/wiki/Path_%28computing%29#POSIX_pathname_definition" target="_blank" rel="noopener noreferrer">POSIX paths<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a> (unix-style with <code>/</code> as separator) are supported for referencing local files, with the security restraint that they <code>MUST</code> be relative siblings or children of the descriptor. Absolute paths (/) and relative parent paths (…/) MUST NOT be used, and implementations SHOULD NOT support these path types.</li></ul> <p>Examples:</p> <div class="language- extra-class"><pre class="language-text"><code># fully qualified url
+&quot;path&quot;: &quot;http://ex.datapackages.org/big-csv/my-big.csv&quot;
+
+# relative path
+# note: this will work both as a relative path on disk and on online
+&quot;path&quot;: &quot;my-data-directory/my-csv.csv&quot;
+</code></pre></div><div class="custom-block warning"><p class="custom-block-title">WARNING</p> <p><code>/</code> (absolute path) and <code>../</code> (relative parent path) are forbidden to avoid security vulnerabilities when implementing data package software. These limitations on resource <code>path</code> ensure that resource paths only point to files within the data package directory and its subdirectories. This prevents data package software being exploited by a malicious user to gain unintended access to sensitive information.</p></div> <div class="custom-block warning"><p class="custom-block-title">For example, suppose a data package hosting service stores packages on disk and allows access via an API. A malicious user uploads a data package with a resource path like `/etc/passwd`.  The user then requests the data for that resource and the server naively opens `/etc/passwd` and returns that data to the caller.</p></div> <p>:::notice prior to release 1.0.0-beta.18 (Nov 17 2016) there was a <code>url</code> property distinct from <code>path</code>. In order to support backwards compatibility, implementors MAY want to automatically convert a <code>url</code> property to a <code>path</code> property and issue a warning.<br>
+:::</p> <h4 id="data-in-multiple-files"><a href="#data-in-multiple-files" class="header-anchor">#</a> Data in Multiple Files</h4> <p>Usually, a resource will have only a single file associated to it. However,<br>
+sometimes it may be convenient to have a single resource whose data is split<br>
+across multiple files – perhaps the data is large and having it in one file<br>
+would be inconvenient.</p> <p>To support this use case the <code>path</code> property MAY be an array of strings rather<br>
+than a single string:</p> <div class="language- extra-class"><pre class="language-text"><code>&quot;path&quot;: [ &quot;myfile1.csv&quot;, &quot;myfile2.csv&quot; ]
+</code></pre></div><p>It is NOT permitted to mix fully qualified URLs and relative paths in a <code>path</code><br>
+array: strings MUST either all be relative paths or all URLs.</p> <p>!! NOTE: all files in the array MUST be similar in terms of structure, format etc. Implementors MUST be able to concatenate together the files in the simplest way and treat the result as one large file. For tabular data there is the issue of header rows. See the <a href="/specs/tabular-data-package/">Tabular Data Package spec</a> for more on this.</p> <h3 id="data-inline-data"><a href="#data-inline-data" class="header-anchor">#</a> <code>data</code> Inline Data</h3> <p>Resource data rather than being stored in external files can be shipped<br>
+‘inline’ on a Resource using the <code>data</code> property.</p> <p>The value of the data property  can be any type of data. However, restrictions<br>
+of JSON require that the value be a string so for binary data you will need to<br>
+encode (e.g. to Base64). Information on the type and encoding of the value of<br>
+the data property SHOULD be provided by the format (or mediatype) property<br>
+and the encoding property.</p> <p>Specifically: the value of the data property MUST be:</p> <ul><li>EITHER: a JSON array or object - the data is then assumed to be JSON data and SHOULD be processed as such</li> <li>OR: a JSON string - in this case the format or mediatype properties MUST be provided.</li></ul> <p>Thus, a consumer of resource object MAY assume if no format or mediatype<br>
+property is provided that the data is JSON and attempt to process it as such.</p> <p>Examples 1 - inline JSON:</p> <div class="language- extra-class"><pre><code>{
+   ...
+   &quot;resources&quot;: [
+     {
+        &quot;format&quot;: &quot;json&quot;,
+        # some json data e.g.
+        &quot;data&quot;: [
+           { &quot;a&quot;: 1, &quot;b&quot;: 2 },
+           { .... }
+        ]
+     }
+   ]
+}
+</code></pre></div><p>Example 2 - inline CSV:</p> <div class="language- extra-class"><pre><code>{
+   ...
+   &quot;resources&quot;: [
+     {
+        &quot;format&quot;: &quot;csv&quot;,
+        &quot;data&quot;: &quot;A,B,C\n1,2,3\n4,5,6&quot;
+     }
+   ]
+}
+</code></pre></div><h2 id="metadata-properties"><a href="#metadata-properties" class="header-anchor">#</a> Metadata Properties</h2> <h3 id="required-properties"><a href="#required-properties" class="header-anchor">#</a> Required Properties</h3> <p>A descriptor MUST contain the following properties:</p> <h4 id="name"><a href="#name" class="header-anchor">#</a> <code>name</code></h4> <p>A resource MUST contain a <code>name</code> property. The name is a simple name or<br>
+identifier to be used for this resource.</p> <ul><li>If present, the name MUST be unique amongst all resources in this data<br>
+package.</li> <li>It MUST consist only of lowercase alphanumeric characters plus “.”, “-” and “_”.</li> <li>It would be usual for the name to correspond to the file name (minus the<br>
+extension) of the data file the resource describes.</li></ul> <h3 id="recommended-properties"><a href="#recommended-properties" class="header-anchor">#</a> Recommended Properties</h3> <h4 id="profile"><a href="#profile" class="header-anchor">#</a> <code>profile</code></h4> <p>A string identifying the <a href="/specs/profiles/">profile</a> of this descriptor as per the <a href="/specs/profiles/">profiles</a> specification.</p> <p>Examples:</p> <div class="language-javascript extra-class"><pre class="language-javascript"><code><span class="token punctuation">{</span>
+  <span class="token string">&quot;profile&quot;</span><span class="token operator">:</span> <span class="token string">&quot;tabular-data-resource&quot;</span>
+<span class="token punctuation">}</span>
+</code></pre></div><div class="language- extra-class"><pre class="language-text"><code>{
+  &quot;profile&quot;: &quot;http://example.com/my-profiles-json-schema.json&quot;
+}
+</code></pre></div><h3 id="optional-properties"><a href="#optional-properties" class="header-anchor">#</a> Optional Properties</h3> <p>A descriptor MAY contain any number of additional properties. Common properties include:</p> <ul><li><p><code>title</code>: a title or label for the resource.</p></li> <li><p><code>description</code>: a description of the resource.</p></li> <li><p><code>format</code>: ‘csv’, ‘xls’, ‘json’ etc. Would be expected to be the standard file<br>
+extension for this type of resource.</p></li> <li><p><code>mediatype</code>: the mediatype/mimetype of the resource e.g. ‘text/csv’, ‘application/vnd.ms-excel’</p></li> <li><p><code>mediatype</code>: the mediatype/mimetype of the resource e.g. “text/csv”, or “application/vnd.ms-excel”. Mediatypes are maintained by the Internet Assigned Numbers Authority (IANA) in a <a href="https://www.iana.org/assignments/media-types/media-types.xhtml" target="_blank" rel="noopener noreferrer">media type registry<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a>.</p></li> <li><p><code>encoding</code>: specify the character encoding of the resource’s data file. The values should be one of<br>
+the “Preferred MIME Names” for <a href="http://www.iana.org/assignments/character-sets/character-sets.xhtml" target="_blank" rel="noopener noreferrer">a character encoding registered with IANA<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a>. If no<br>
+value for this key is specified then the default is UTF-8.</p></li> <li><p><code>bytes</code>: size of the file in bytes.</p></li> <li><p><code>hash</code>: the MD5 hash for this resource. Other algorithms can be indicated by prefixing<br>
+the hash’s value with the algorithm name in lower-case. For example:</p> <div class="language- extra-class"><pre><code>&quot;hash&quot;: &quot;sha1:8843d7f92416211de9ebb963ff4ce28125932878&quot;
+</code></pre></div></li> <li><p><code>sources</code>: as for <a href="/specs/data-package/">Data Package metadata</a>.</p></li> <li><p><code>licenses</code>: as for <a href="/specs/data-package/">Data Package metadata</a>. If not specified the resource<br>
+inherits from the data package.</p></li></ul> <h2 id="resource-schemas"><a href="#resource-schemas" class="header-anchor">#</a> Resource Schemas</h2> <p>A Data Resource MAY have a <code>schema</code> property to describe the schema of the resource data.</p> <p>The value for the <code>schema</code> property on a <code>resource</code> MUST be an <code>object</code> representing the schema OR a <code>string</code> that identifies the location of the schema.</p> <p>If a <code>string</code> it must be a <a href="#url-or-path">url-or-path as defined above</a>, that is a fully qualified http URL or a relative POSIX path. The file at the location specified by this url-or-path string <code>MUST</code> be a JSON document containing the schema.</p> <p>!! NOTE: the Data Package specification places no restrictions on the form of the schema Object. This flexibility enables specific communities to define schemas appropriate for the data they manage. As an example, the <a href="/specs/tabular-data-package/">Tabular Data Package</a> specification requires the schema to conform to <a href="/specs/table-schema/">Table Schema</a>.</p></div></div><div class="global-ui"></div></div>
+    <script src="/assets/js/app.0a3985f5.js" defer></script><script src="/assets/js/4.c6f950b7.js" defer></script><script src="/assets/js/1.024d35fb.js" defer></script><script src="/assets/js/14.1b0e4f2f.js" defer></script>
+  </body>
+</html>
