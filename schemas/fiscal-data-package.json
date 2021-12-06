@@ -327,7 +327,10 @@
                 "propertyOrder": 40,
                 "title": "Table Schema",
                 "description": "A Table Schema for this resource, compliant with the [Table Schema](/tableschema/) specification.",
-                "type": "object",
+                "type": [
+                  "string",
+                  "object"
+                ],
                 "required": [
                   "fields"
                 ],
@@ -2006,7 +2009,10 @@
                 "propertyOrder": 50,
                 "title": "CSV Dialect",
                 "description": "The CSV dialect descriptor.",
-                "type": "object",
+                "type": [
+                  "string",
+                  "object"
+                ],
                 "required": [
                   "delimiter",
                   "doubleQuote"
@@ -2345,7 +2351,10 @@
                 "propertyOrder": 40,
                 "title": "Table Schema",
                 "description": "A Table Schema for this resource, compliant with the [Table Schema](/tableschema/) specification.",
-                "type": "object",
+                "type": [
+                  "string",
+                  "object"
+                ],
                 "required": [
                   "fields"
                 ],
@@ -4024,7 +4033,10 @@
                 "propertyOrder": 50,
                 "title": "CSV Dialect",
                 "description": "The CSV dialect descriptor.",
-                "type": "object",
+                "type": [
+                  "string",
+                  "object"
+                ],
                 "required": [
                   "delimiter",
                   "doubleQuote"
