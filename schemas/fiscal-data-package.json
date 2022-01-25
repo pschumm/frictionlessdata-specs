@@ -187,6 +187,18 @@
             "title": "License",
             "description": "A license for this descriptor.",
             "type": "object",
+            "oneOf": [
+              {
+                "required": [
+                  "name"
+                ]
+              },
+              {
+                "required": [
+                  "path"
+                ]
+              }
+            ],
             "properties": {
               "name": {
                 "title": "Open Definition license identifier",
@@ -1971,6 +1983,18 @@
                   "title": "License",
                   "description": "A license for this descriptor.",
                   "type": "object",
+                  "oneOf": [
+                    {
+                      "required": [
+                        "name"
+                      ]
+                    },
+                    {
+                      "required": [
+                        "path"
+                      ]
+                    }
+                  ],
                   "properties": {
                     "name": {
                       "title": "Open Definition license identifier",
@@ -3995,6 +4019,18 @@
                   "title": "License",
                   "description": "A license for this descriptor.",
                   "type": "object",
+                  "oneOf": [
+                    {
+                      "required": [
+                        "name"
+                      ]
+                    },
+                    {
+                      "required": [
+                        "path"
+                      ]
+                    }
+                  ],
                   "properties": {
                     "name": {
                       "title": "Open Definition license identifier",
