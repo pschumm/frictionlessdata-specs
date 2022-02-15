@@ -378,6 +378,14 @@
                             "{\n  \"description\": \"# My Package description\\nAll about my package.\"\n}\n"
                           ]
                         },
+                        "example": {
+                          "title": "Example",
+                          "description": "An example value for the field.",
+                          "type": "string",
+                          "examples": [
+                            "{\n  \"example\": \"Put here an example value for your field\"\n}\n"
+                          ]
+                        },
                         "type": {
                           "description": "The type keyword, which `MUST` be a value of `string`.",
                           "enum": [
@@ -472,6 +480,14 @@
                           "type": "string",
                           "examples": [
                             "{\n  \"description\": \"# My Package description\\nAll about my package.\"\n}\n"
+                          ]
+                        },
+                        "example": {
+                          "title": "Example",
+                          "description": "An example value for the field.",
+                          "type": "string",
+                          "examples": [
+                            "{\n  \"example\": \"Put here an example value for your field\"\n}\n"
                           ]
                         },
                         "type": {
@@ -598,6 +614,14 @@
                             "{\n  \"description\": \"# My Package description\\nAll about my package.\"\n}\n"
                           ]
                         },
+                        "example": {
+                          "title": "Example",
+                          "description": "An example value for the field.",
+                          "type": "string",
+                          "examples": [
+                            "{\n  \"example\": \"Put here an example value for your field\"\n}\n"
+                          ]
+                        },
                         "type": {
                           "description": "The type keyword, which `MUST` be a value of `integer`.",
                           "enum": [
@@ -712,6 +736,14 @@
                             "{\n  \"description\": \"# My Package description\\nAll about my package.\"\n}\n"
                           ]
                         },
+                        "example": {
+                          "title": "Example",
+                          "description": "An example value for the field.",
+                          "type": "string",
+                          "examples": [
+                            "{\n  \"example\": \"Put here an example value for your field\"\n}\n"
+                          ]
+                        },
                         "type": {
                           "description": "The type keyword, which `MUST` be a value of `date`.",
                           "enum": [
@@ -792,6 +824,14 @@
                           "type": "string",
                           "examples": [
                             "{\n  \"description\": \"# My Package description\\nAll about my package.\"\n}\n"
+                          ]
+                        },
+                        "example": {
+                          "title": "Example",
+                          "description": "An example value for the field.",
+                          "type": "string",
+                          "examples": [
+                            "{\n  \"example\": \"Put here an example value for your field\"\n}\n"
                           ]
                         },
                         "type": {
@@ -875,6 +915,14 @@
                             "{\n  \"description\": \"# My Package description\\nAll about my package.\"\n}\n"
                           ]
                         },
+                        "example": {
+                          "title": "Example",
+                          "description": "An example value for the field.",
+                          "type": "string",
+                          "examples": [
+                            "{\n  \"example\": \"Put here an example value for your field\"\n}\n"
+                          ]
+                        },
                         "type": {
                           "description": "The type keyword, which `MUST` be a value of `datetime`.",
                           "enum": [
@@ -954,6 +1002,14 @@
                           "type": "string",
                           "examples": [
                             "{\n  \"description\": \"# My Package description\\nAll about my package.\"\n}\n"
+                          ]
+                        },
+                        "example": {
+                          "title": "Example",
+                          "description": "An example value for the field.",
+                          "type": "string",
+                          "examples": [
+                            "{\n  \"example\": \"Put here an example value for your field\"\n}\n"
                           ]
                         },
                         "type": {
@@ -1065,6 +1121,14 @@
                             "{\n  \"description\": \"# My Package description\\nAll about my package.\"\n}\n"
                           ]
                         },
+                        "example": {
+                          "title": "Example",
+                          "description": "An example value for the field.",
+                          "type": "string",
+                          "examples": [
+                            "{\n  \"example\": \"Put here an example value for your field\"\n}\n"
+                          ]
+                        },
                         "type": {
                           "description": "The type keyword, which `MUST` be a value of `yearmonth`.",
                           "enum": [
@@ -1146,6 +1210,14 @@
                           "type": "string",
                           "examples": [
                             "{\n  \"description\": \"# My Package description\\nAll about my package.\"\n}\n"
+                          ]
+                        },
+                        "example": {
+                          "title": "Example",
+                          "description": "An example value for the field.",
+                          "type": "string",
+                          "examples": [
+                            "{\n  \"example\": \"Put here an example value for your field\"\n}\n"
                           ]
                         },
                         "type": {
@@ -1246,6 +1318,14 @@
                             "{\n  \"description\": \"# My Package description\\nAll about my package.\"\n}\n"
                           ]
                         },
+                        "example": {
+                          "title": "Example",
+                          "description": "An example value for the field.",
+                          "type": "string",
+                          "examples": [
+                            "{\n  \"example\": \"Put here an example value for your field\"\n}\n"
+                          ]
+                        },
                         "type": {
                           "description": "The type keyword, which `MUST` be a value of `object`.",
                           "enum": [
@@ -1340,6 +1420,14 @@
                           "type": "string",
                           "examples": [
                             "{\n  \"description\": \"# My Package description\\nAll about my package.\"\n}\n"
+                          ]
+                        },
+                        "example": {
+                          "title": "Example",
+                          "description": "An example value for the field.",
+                          "type": "string",
+                          "examples": [
+                            "{\n  \"example\": \"Put here an example value for your field\"\n}\n"
                           ]
                         },
                         "type": {
@@ -1445,6 +1533,14 @@
                             "{\n  \"description\": \"# My Package description\\nAll about my package.\"\n}\n"
                           ]
                         },
+                        "example": {
+                          "title": "Example",
+                          "description": "An example value for the field.",
+                          "type": "string",
+                          "examples": [
+                            "{\n  \"example\": \"Put here an example value for your field\"\n}\n"
+                          ]
+                        },
                         "type": {
                           "description": "The type keyword, which `MUST` be a value of `geojson`.",
                           "enum": [
@@ -1544,6 +1640,14 @@
                             "{\n  \"description\": \"# My Package description\\nAll about my package.\"\n}\n"
                           ]
                         },
+                        "example": {
+                          "title": "Example",
+                          "description": "An example value for the field.",
+                          "type": "string",
+                          "examples": [
+                            "{\n  \"example\": \"Put here an example value for your field\"\n}\n"
+                          ]
+                        },
                         "type": {
                           "description": "The type keyword, which `MUST` be a value of `array`.",
                           "enum": [
@@ -1641,6 +1745,14 @@
                             "{\n  \"description\": \"# My Package description\\nAll about my package.\"\n}\n"
                           ]
                         },
+                        "example": {
+                          "title": "Example",
+                          "description": "An example value for the field.",
+                          "type": "string",
+                          "examples": [
+                            "{\n  \"example\": \"Put here an example value for your field\"\n}\n"
+                          ]
+                        },
                         "type": {
                           "description": "The type keyword, which `MUST` be a value of `duration`.",
                           "enum": [
@@ -1721,6 +1833,14 @@
                           "type": "string",
                           "examples": [
                             "{\n  \"description\": \"# My Package description\\nAll about my package.\"\n}\n"
+                          ]
+                        },
+                        "example": {
+                          "title": "Example",
+                          "description": "An example value for the field.",
+                          "type": "string",
+                          "examples": [
+                            "{\n  \"example\": \"Put here an example value for your field\"\n}\n"
                           ]
                         },
                         "type": {
