@@ -2006,23 +2006,23 @@
             ]
           },
           "title": {
-            "propertyOrder": 50,
             "title": "Title",
             "description": "A human-readable title.",
             "type": "string",
             "examples": [
               "{\n  \"title\": \"My Package Title\"\n}\n"
-            ]
+            ],
+            "propertyOrder": 50
           },
           "description": {
-            "propertyOrder": 60,
-            "format": "textarea",
             "title": "Description",
             "description": "A text description. Markdown is encouraged.",
             "type": "string",
             "examples": [
               "{\n  \"description\": \"# My Package description\\nAll about my package.\"\n}\n"
-            ]
+            ],
+            "propertyOrder": 60,
+            "format": "textarea"
           },
           "homepage": {
             "propertyOrder": 70,

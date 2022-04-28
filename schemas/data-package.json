@@ -331,13 +331,13 @@
             ]
           },
           "title": {
-            "propertyOrder": 50,
             "title": "Title",
             "description": "A human-readable title.",
             "type": "string",
             "examples": [
               "{\n  \"title\": \"My Package Title\"\n}\n"
-            ]
+            ],
+            "propertyOrder": 50
           },
           "description": {
             "propertyOrder": 60,
